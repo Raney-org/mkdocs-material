@@ -1,13 +1,9 @@
-name: ci 
+name: Build & Deploy
+
 on:
   push:
-    branches:
-      - master 
-      - main
   pull_request:
   workflow_dispatch:
-permissions:
-  contents: write
 
 concurrency:
   group: ${{ github.ref }}
@@ -15,24 +11,27 @@ concurrency:
 
 jobs:
   add-contributors:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     if: github.ref == 'refs/heads/main'
     steps:
     - uses: actions/checkout@v3
     - uses: BobAnkh/add-contributors@master
       with:
-        REPO_NAME: 'raneydazed/mkdocs-material'
+        REPO_NAME: 'saltyorg/docs'
         CONTRIBUTOR: '### Contributors'
         COLUMN_PER_ROW: '6'
-        ACCESS_TOKEN: ${{ secrets.PAC_TOKEN }}
+        ACCESS_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         IMG_WIDTH: '100'
         FONT_SIZE: '14'
         PATH: '/README.md'
         COMMIT_MESSAGE: 'docs(README): update contributors'
-        AVATAR_SHAPE: 'round'
+        AVATAR_SHAPE: 'square'
 
-  deploy:
-    runs-on: ubuntu-latest
+  build:
+    runs-on: ubuntu-22.04
+    if: github.event.repository.fork == false && github.event_name != 'pull_request'
+    outputs:
+      url: ${{ steps.cloudflare.outputs.url }}
     steps:
       - name: Checkout
         uses: actions/checkout@v3
@@ -40,13 +39,29 @@ jobs:
       - name: Setup Python 3
         uses: actions/setup-python@v4
         with:
-          python-version: 3.x
-      - uses: actions/cache@v2
+          python-version: '3.x'
+
+      - name: Install wheel
+        run: pip install wheel
+
+      - name: Install mkdocs material insiders
+        run: pip install git+https://${{ secrets.GH_TOKEN }}@github.com/chazlarson/automaticSpoon.git
+
+      - name: Install lightgallery
+        run: pip install lightgallery
+
+      - name: Build mkdocs
+        run: mkdocs build
+
+      - name: Publish to Cloudflare Pages
+        id: cloudflare
+        uses: cloudflare/pages-action@v1.4.1
         with:
-          key: ${{ github.ref }}
-          path: .cache
-      - run: pip install mkdocs-material
-      - run: mkdocs gh-deploy --force
+          apiToken: ${{ secrets.CF_API_TOKEN }}
+          accountId: 86b9f680e99b6d172395cc7309a9d8a8
+          projectName: docs
+          directory: site
+          gitHubToken: ${{ secrets.GH_TOKEN }}
 
   webhook:
     name: 'webhook'
