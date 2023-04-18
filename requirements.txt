@@ -1,1 +1,1 @@
-mkdocs-material==mkdocs, version 1.4.2
+mkdocs-material==mkdocs, version 1.4.2 from /opt/mkdocs-material/.venv/lib/python3.10/site-packages/mkdocs (Python 3.10)
