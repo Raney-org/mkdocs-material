@@ -1,3 +1,29 @@
 site_name: My Docs
+site_author: Rane Danielsen
+site_description: This is a weird amalgamation of notes of different kinds that I've tossed together.
+
+repo_name: mkdocs-material
+repo_url: https://github.com/raneydazed/mkdocs-material
+
+edit_uri: edit/main/docs/
+
 theme:
   name: material
+  features:
+  - content.code.copy
+  - content.action.edit
+  - content.action.view
+  - header.autohide
+  - navigation.footer
+  - navigation.tabs
+  - navigation.tabs.sticky
+  - navigation.sections
+  - navigation.top
+  - navigation.tracking
+  - navigation.instant
+  - navigation.prune
+  - toc.follow
+  - search.suggest
+  - search.highlight
+  - search.share
+  
