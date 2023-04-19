@@ -4,7 +4,7 @@
 
 Falsification can be demonstrated clearly by looking at the structure of the argument. When a test yields a negative result, the hypothetico–deductive method sets up the following argument form:
 
-```text 'tits'
+```py
 If H, then C.
 Not C.
 Therefore, not H.
