@@ -144,10 +144,13 @@ copyright: >
 nav:
   - Home: index.md
   - Notes:
-    - School:
-      - Informal Logic:
-        - Learning Activity:
-          - Week-3: school/informal-logic/learning-activity/week-3.md
-        - General Notes: school/informal-logic/notes.md
-      - Fundamentals of Programming Languages:
-        - General Notes
+  - School:
+    - Informal Logic:
+      - Learning Activity:
+        - Week-3: school/informal-logic/learning-activity/week-3.md
+      - General Notes: school/informal-logic/notes.md
+    - Fundamentals of Programming Languages:
+      - General Notes: school/programming-languages/notes.md
+      - Python:
+        - Python: school/programming-languages/python/python-overview.md
+        - Variables and Expressions: school/programming-languages/python/variables-expressions
