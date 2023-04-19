@@ -31,7 +31,7 @@ we are not focused on relationships between parts and their wholes, as we are wh
 
 #### What is Logic?
 
-maybe the study of the methods and principles of good reasoning?
+maybe the study of the methods and principles of good reasoning? I'm not quite sure tbh
 implying that there are certain principles at work in good reasoning
 
 these principles and methods are not a matter of opinion. (very cocky!)
