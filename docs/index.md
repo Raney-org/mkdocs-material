@@ -24,7 +24,7 @@ For full documentation visit [mkdocs.org](https://squidfunk.github.io/mkdocs-mat
 * :simple-docker: [__Docker__](https://www.docker.com/){target=_blank}
 * :material-bash: [__Bash__](https://www.gnu.org/software/bash/){target=_blank}
 * :simple-python: [__Python__](https://www.python.org/){target=_blank}
-* :material/material-ui: [__Mkdocs__](https://squidfunk.github.io/mkdocs-material/){target=_blank}
+* :material-ui: [__Mkdocs__](https://squidfunk.github.io/mkdocs-material/){target=_blank}
 
 </div>
 

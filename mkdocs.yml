@@ -10,6 +10,10 @@ edit_uri: edit/main/docs/
 
 theme:
   name: material
+  custom_dir: overrides
+  icon:
+    logo: fontawesome/solid/chair
+    repo: octicons/logo-github-16
   features:
   - content.code.copy
   - content.action.edit
@@ -58,8 +62,9 @@ theme:
 plugins:
   - search:
       lang: en
-  # - social:
-  #     cards_font: Roboto
+      separator: '[\s\-,:!=\[\]()"/]+|(?!\b)(?=[A-Z][a-z])|\.(?!\d)|&[lg]t;'
+  - social:
+      cards_font: Roboto
 
 markdown_extensions:
   - pymdownx.keys
@@ -88,6 +93,9 @@ markdown_extensions:
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
+
+extra_javascript:
+  - javascripts/shortcuts.js
 
 extra: 
   generator: false
