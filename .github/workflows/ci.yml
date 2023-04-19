@@ -25,7 +25,7 @@ jobs:
     - name: Add_Contributors
       uses: BobAnkh/add-contributors@master
       with:
-        REPO_NAME: 'raneydazed/mkdocs-material'
+        REPO_NAME: 'Raney-org/mkdocs-material'
         CONTRIBUTOR: '### Contributors'
         COLUMN_PER_ROW: '6'
         ACCESS_TOKEN: ${{ secrets.PAC_TOKEN }}
