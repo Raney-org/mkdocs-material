@@ -58,8 +58,8 @@ jobs:
       - name: Install wheel
         run: pip install wheel
 
-      # - name: Install Cairosvg
-      #   run: pip install pillow cairosvg
+      - name: Install Cairosvg
+        run: pip install pillow cairosvg
 
       - name: Install lightgallery
         run: pip install lightgallery
