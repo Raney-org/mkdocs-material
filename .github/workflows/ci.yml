@@ -85,8 +85,8 @@ jobs:
         id: cloudflare
         uses: cloudflare/pages-action@1
         with:
-          apiToken: ${{ secrets.CF_API_TOKEN }}
-          accountId: ${{ secrets.CF_ACCOUNT_ID }}
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           projectName: mkdocs-material
           directory: site
           gitHubToken: ${{ secrets.PAC_TOKEN }}
