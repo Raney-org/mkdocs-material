@@ -58,8 +58,8 @@ theme:
 plugins:
   - search:
       lang: en
-  - social:
-      cards_font: Roboto
+  # - social:
+  #     cards_font: Roboto
 
 markdown_extensions:
   - pymdownx.keys
