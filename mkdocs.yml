@@ -27,6 +27,7 @@ theme:
   - search.suggest
   - search.highlight
   - search.share
+  language: en
   palette:
     # Palette toggle for automatic mode
     - media: "(prefers-color-scheme)"
@@ -53,3 +54,88 @@ theme:
       toggle:
         icon: material/brightness-4
         name: Switch to system preference
+
+plugins:
+  - search:
+      lang: en
+  - social:
+      cards_font: Roboto
+
+markdown_extensions:
+  - pymdownx.keys
+  - pymdownx.highlight:
+      use_pygments: true
+      linenums: true
+      pygments_lang_class: true
+      auto_title: true
+      anchor_linenums: true
+      linenums_style: pymdownx-inline
+      line_spans: __span
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.inlinehilite
+  - pymdownx.smartsymbols
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - admonition
+  - attr_list
+  - md_in_html
+  - pymdownx.tilde
+  - toc:
+      permalink: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+
+extra:
+  generator: false
+  social:
+  - icon: fontawesome/brands/discord
+    link: 'https://discord.gg/RKWgjDqkhR'
+    name: Discord
+  - icon: fontawesome/brands/github
+    link: 'https://github.com/raneydazed/mkdocs-material'
+    name: GitHub
+  - icon: fontawesome/solid/paper-plane
+    link: mailto:support@raneydazed.com
+    name: Email
+  - icon: fontawesome/brands/linkedin
+    link: 'https://www.linkedin.com/in/raneydazed'
+
+  analytics:
+    provider: google
+    property: G-E76LZ0DT3L
+    feedback:
+      title: Was this page helpful AF?
+      ratings:
+        - icon: material/emoticon-happy-outline
+          name: This page was helpful AF
+          data: 1
+          note: >-
+            Thanks for your feedback sucker!!
+        - icon: material/emoticon-sad-outline
+          name: This page could be improved bub. Like a lot
+          data: 0
+          note: >- 
+            Thanks for your feedback! Help us improve this page by
+            using our <a href="..." target="_blank" rel="noopener">feedback form</a>.
+  consent:
+    title: Cookie consent
+    description: >- 
+      We use cookies to recognize your repeated visits and preferences, as well
+      as to measure the effectiveness of our documentation and whether users
+      find what they're searching for. With your consent, you're helping us to
+      make our documentation better.
+
+copyright: >
+  Copyright &copy; 2016 - 2023 Rane Danielsen -
+  <a href="#__consent">Change cookie settings</a>
+
+nav:
+  - Home: index.md
+  - Notes:
+    - School:
+      - Informal Logic:
+        - General Notes: school/informal-logic/notes.md
