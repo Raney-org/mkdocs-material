@@ -55,11 +55,11 @@ jobs:
         with:
           python-version: 3.x
 
-      - name: Install wheel
-        run: pip install wheel
-
       - name: Install Cairosvg
         run: pip install pillow cairosvg
+
+      - name: Install wheel
+        run: pip install wheel
 
       - name: Install lightgallery
         run: pip install lightgallery
@@ -73,8 +73,23 @@ jobs:
       - name: Install Mkdocs Material
         run: pip install mkdocs-material
 
-      - name: Make Them Docs Boi
-        run: mkdocs gh-deploy --force
+
+#! attempting to make use of cf pages action. god help me
+      # - name: Make Them Docs Boi
+      #   run: mkdocs gh-deploy --force
+
+      - name: Build mkdocs
+        run: mkdocs build
+
+      - name: Publish to Cloudflare Pages
+        id: cloudflare
+        uses: cloudflare/pages-action@1
+        with:
+          apiToken: ${{ secrets.CF_API_TOKEN }}
+          accountId: ${{ secrets.CF_ACCOUNT_ID }}
+          projectName: mkdocs-material
+          directory: site
+          gitHubToken: ${{ secrets.PAC_TOKEN }}
 
   webhook:
     name: 'webhook'
