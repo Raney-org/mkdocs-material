@@ -130,7 +130,7 @@ extra:
       make our documentation better.
 
 copyright: >
-  Copyright &copy; 2016 - 2023 Rane Danielsen -
+  Copyright &copy; 2023 Rane Danielsen -
   <a href="#__consent">Change cookie settings</a>
 
 nav:
@@ -138,4 +138,8 @@ nav:
   - Notes:
     - School:
       - Informal Logic:
+        - Learning Activity:
+          - Week-3: school/informal-logic/learning-activity/week-3.md
         - General Notes: school/informal-logic/notes.md
+      - Fundamentals of Programming Languages:
+        - General Notes
