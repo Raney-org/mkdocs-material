@@ -134,3 +134,11 @@ dmypy.json
 
 # mkdocs-material suggested ignoring the .cache dir?
 # .cache
+
+# Obsidian
+
+.trash/
+.DS_Store
+*.log
+log*
+.obsidian/*
