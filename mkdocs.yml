@@ -4,7 +4,7 @@ site_author: Rane Danielsen
 site_description: This is a weird amalgamation of notes of different kinds that I've tossed together.
 
 repo_name: mkdocs-material
-repo_url: https://github.com/raneydazed/mkdocs-material
+repo_url: https://github.com/raney-org/mkdocs-material
 
 edit_uri: edit/main/docs/
 
@@ -63,8 +63,8 @@ plugins:
   - search:
       lang: en
       separator: '[\s\-,:!=\[\]()"/]+|(?!\b)(?=[A-Z][a-z])|\.(?!\d)|&[lg]t;'
-  - social:
-      cards_font: Roboto
+  # - social:
+  #     cards_font: Roboto
 
 markdown_extensions:
   - pymdownx.keys
