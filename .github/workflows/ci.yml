@@ -58,11 +58,14 @@ jobs:
       - name: Install Cairosvg
         run: pip install pillow cairosvg
 
+      - name: Install glightbox??
+        run: pip install mkdocs-glightbox
+
       - name: Install wheel
         run: pip install wheel
 
-      - name: Install lightgallery
-        run: pip install lightgallery
+      # - name: Install lightgallery
+      #   run: pip install lightgallery
 
       - name: Cache
         uses: actions/cache@v2
@@ -72,11 +75,6 @@ jobs:
 
       - name: Install Mkdocs Material
         run: pip install mkdocs-material
-
-
-#! attempting to make use of cf pages action. god help me
-      # - name: Make Them Docs Boi
-      #   run: mkdocs gh-deploy --force
 
       - name: Build mkdocs
         run: mkdocs build
