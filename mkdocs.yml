@@ -40,6 +40,7 @@ theme:
   - navigation.tracking
   - navigation.instant
   - navigation.prune
+  - navigation.indexes 
   - toc.follow
   - search.suggest
   - search.highlight
