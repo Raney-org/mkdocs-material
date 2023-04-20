@@ -157,6 +157,7 @@ copyright: >
 nav:
   - Home: index.md
   - School:
+    - school/README.md
     - Informal Logic:
         - General Notes: school/informal-logic/notes.md
         - Book Excerpts: school/informal-logic/book-excerpts.md
