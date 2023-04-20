@@ -1,3 +1,8 @@
+---
+tags:
+  - PYTHON
+---
+
 # Python section 2.1 Variables and Expressions
 
 You used that box to remember the number of people as you proceeded through each step. Likewise, a program uses a _variable_ to remember values as the program executes instructions. (By the way, the real riddle's ending question is actually "What is the bus driver's name?"— the subject usually says "How should I know?". The riddler then says "I said, YOU are driving a bus.")

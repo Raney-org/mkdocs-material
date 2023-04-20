@@ -1,4 +1,4 @@
-site_name: My Docs
+site_name: Raneys' Docs
 site_url: https://www.ranevm.com
 site_author: Rane Danielsen
 site_description: This is a weird amalgamation of notes of different kinds that I've tossed together.
@@ -14,6 +14,11 @@ theme:
   icon:
     logo: fontawesome/solid/chair
     repo: octicons/logo-github-16
+    tag:
+      html: fontawesome/brands/html5
+      js: fontawesome/brands/js
+      css: fontawesome/brands/css3
+      python: fontawesome/brands/python
     admonition:
       note: octicons/tag-16
       abstract: octicons/checklist-16
@@ -77,6 +82,8 @@ plugins:
   - search:
       lang: en
       separator: '[\s\-,:!=\[\]()"/]+|(?!\b)(?=[A-Z][a-z])|\.(?!\d)|&[lg]t;'
+  - tags:
+      tags_file: tags.md
   # - social:
   #     cards_font: Roboto
 
@@ -112,8 +119,13 @@ markdown_extensions:
 extra_javascript:
   - javascripts/shortcuts.js
 
-extra: 
+extra:
   generator: false
+  tags:
+    HTML5: html
+    JavaScript: js
+    CSS: css
+    PYTHON: python
   social:
   - icon: fontawesome/brands/discord
     link: 'https://discord.gg/RKWgjDqkhR'
