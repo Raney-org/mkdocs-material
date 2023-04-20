@@ -330,7 +330,7 @@ According to philosopher David Hume (1757), many of us do not have a sensitive e
 
 Logicians and philosophers in general take language very seriously because it is the best means for expressing our thoughts, to be understood by others, and to clarify ideas that are in need of clarification. Communicating in a language, however, is more complex than we recognize. As renowned philosopher John Searle observed, “Speaking a language is engaging in a rule-governed form of behavior” (Searle, 1969, p. 22). This means that whenever we talk or write, we are performing according to specific rules. Pauses in speech are represented by punctuation marks such as commas or periods. If we do not pause, the meaning of the same string of words could change its meaning completely. The same principle applies in writing. But although we are more conscious of making such pauses in speech, sometimes we overlook their importance in writing. A clever saying on a T-shirt illustrates this point, and it reads as follows:
 
-``` elm
+```py
 Let’s eat Grandma.
 
 Let’s eat, Grandma.

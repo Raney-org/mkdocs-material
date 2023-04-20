@@ -104,6 +104,7 @@ markdown_extensions:
   - pymdownx.tilde
   - toc:
       permalink: true
+      permalink_title: Anchor link to this section for reference
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
