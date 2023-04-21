@@ -84,7 +84,7 @@ theme:
         name: Switch to system preference
 
 plugins:
-  - meta
+#   - meta fuckin dumb!!!
   - search:
       lang: en
       separator: '[\s\-,:!=\[\]()"/]+|(?!\b)(?=[A-Z][a-z])|\.(?!\d)|&[lg]t;'
