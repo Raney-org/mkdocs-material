@@ -10,7 +10,7 @@ edit_uri: edit/main/docs/
 
 theme:
   name: material
-  custom_dir: overrides
+#  custom_dir: overrides
   icon:
     logo: fontawesome/solid/chair
     repo: octicons/logo-github-16
@@ -20,7 +20,7 @@ theme:
       css: fontawesome/brands/css3
       python: fontawesome/brands/python
       docker: fontawesome/brands/docker
-#      mermaid: material-material-design
+      mermaid: material-material-design
       diagrams: fontawesome-solid-diagram-project
       data-tables: fontawesome-solid-table
     admonition:
