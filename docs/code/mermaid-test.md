@@ -22,4 +22,4 @@ graph LR
   B ---->|No| E[Yay!];
 ```
 
-[^1]: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+[^1]: This is a footnote. Pretty fuckin rad amirite

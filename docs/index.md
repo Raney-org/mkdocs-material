@@ -1,6 +1,13 @@
+---
+hide:
+  - tags
+tags:
+  - INDEX
+---
+
 # Welcome to my documentation site place thing
 
-For full documentation visit [mkdocs.org](https://squidfunk.github.io/mkdocs-material/).
+For full (this website build) documentation visit [mkdocs.org](https://squidfunk.github.io/mkdocs-material/).
 
 ## Commands
 
@@ -11,10 +18,21 @@ For full documentation visit [mkdocs.org](https://squidfunk.github.io/mkdocs-mat
 
 ## Project layout
 
+```yml
     mkdocs.yml    # The configuration file.
     docs/
         index.md  # The documentation homepage.
         ...       # Other markdown pages, images and other files.
+```
+
+ie:
+
+``` mermaid
+graph TD
+    A[root dir] --> B[mkdocs.yml]
+    A --> C[docs]
+    C --> D[index.md]
+```
 
 ## Created with the help of (as well as chaz and salty from saltbox)
 
@@ -36,4 +54,4 @@ Why, [yes there is!](https://discord.gg/RKWgjDqkhR).
 
 Please report any mistakes or suggestions for improving the documentation on our [discord](https://discord.gg/RKWgjDqkhR){target=_blank} or on the [Docs Repository](https://github.com/raney-org/mkdocs-material){target=_blank}, would be much appreciated.
 
-* Docs: [Issues](https://github.com/raneydazed/mkdocs-material/issues){target=_blank}
+* Docs: [Issues](https://github.com/raney-org/mkdocs-material/issues){target=_blank}
