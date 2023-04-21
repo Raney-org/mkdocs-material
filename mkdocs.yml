@@ -226,3 +226,6 @@ nav:
     - Audiobookshelf: code/audiobookshelf.md
     - Pihole + Unbound: code/pihole.md
     - YTDL: code/ytdl.md
+  - Tests:
+      - Mermaid: code/mermaid-test.md
+      - Data Tables: code/datatables.md
