@@ -1,5 +1,4 @@
 ---
-icon: material/table-edit
 tags:
   - DATATABLES
 ---
