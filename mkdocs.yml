@@ -105,8 +105,10 @@ plugins:
       caption_position: bottom
   - social:
       cards_font: Roboto
+  - table-reader
 
 markdown_extensions:
+  - footnotes
   - pymdownx.arithmatex:
       generic: true
   - abbr
@@ -136,6 +138,9 @@ markdown_extensions:
   - attr_list
   - md_in_html
   - pymdownx.tilde
+  - pymdownx.mark
+  - pymdownx.critic
+  - pymdownx.caret
   - toc:
       permalink: true
       permalink_title: Anchor link to this section for reference

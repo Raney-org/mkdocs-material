@@ -53,8 +53,6 @@ graph LR
 ```
 ````
 
-<div class="result" markdown>
-
 ``` mermaid
 graph LR
   A[Start] --> B{Error?};
@@ -63,8 +61,6 @@ graph LR
   D --> B;
   B ---->|No| E[Yay!];
 ```
-
-</div>
 
   [Flowcharts]: https://mermaid-js.github.io/mermaid/#/flowchart
 

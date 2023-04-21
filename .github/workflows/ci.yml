@@ -58,6 +58,9 @@ jobs:
       - name: Install Cairosvg
         run: pip install pillow cairosvg
 
+      - name: Install Table Reader Plugin
+        run: pip install mkdocs-table-reader-plugin
+
       - name: Install glightbox??
         run: pip install mkdocs-glightbox
 
