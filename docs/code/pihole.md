@@ -7,7 +7,7 @@ tags:
 
 ## Pihole compose
 
-???+ success "docker-compose.yml"
+=== "docker-compose.yml"
 
     ```yaml
     version: '3.0'
@@ -74,22 +74,22 @@ tags:
         external: true
     ```
 
+=== ".env"
+
+```toml
+FTLCONF_LOCAL_IPV4=192.168.1.92
+TZ=America/Chicago
+WEBPASSWORD=Chingala1@
+REV_SERVER=true
+REV_SERVER_DOMAIN=localdomain
+REV_SERVER_TARGET=192.168.1.1
+REV_SERVER_CIDR=192.168.1.0/16
+HOSTNAME=pihole
+DOMAIN_NAME=pihole.localdomain
+#PIHOLE_WEBPORT=80
+WEBTHEME=default-dark
+```
+
 ## Pihole `.env`
 
 The PiHole container requires a .env file to compliment the `docker-compose.yml` this is with. Current set up that WORKED was as follows
-
-???+ success ".env"
-
-    ```toml
-    FTLCONF_LOCAL_IPV4=192.168.1.92
-    TZ=America/Chicago
-    WEBPASSWORD=Chingala1@
-    REV_SERVER=true
-    REV_SERVER_DOMAIN=localdomain
-    REV_SERVER_TARGET=192.168.1.1
-    REV_SERVER_CIDR=192.168.1.0/16
-    HOSTNAME=pihole
-    DOMAIN_NAME=pihole.localdomain
-    #PIHOLE_WEBPORT=80
-    WEBTHEME=default-dark
-    ```

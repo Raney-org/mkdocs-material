@@ -10,7 +10,7 @@ edit_uri: edit/main/docs/
 
 theme:
   name: material
-#  custom_dir: overrides
+  custom_dir: overrides
   icon:
     logo: fontawesome/solid/chair
     repo: octicons/logo-github-16
@@ -20,9 +20,9 @@ theme:
       css: fontawesome/brands/css3
       python: fontawesome/brands/python
       docker: fontawesome/brands/docker
-      mermaid: material-material-design
-      diagrams: fontawesome-solid-diagram-project
-      data-tables: fontawesome-solid-table
+      mermaid: fontawesome/solid/fish
+      diagrams: fontawesome/solid/diagram-project
+      data-tables: fontawesome/solid/table
     admonition:
       note: octicons/tag-16
       abstract: octicons/checklist-16
@@ -37,24 +37,26 @@ theme:
       example: octicons/beaker-16
       quote: octicons/quote-16
   features:
-  - content.code.copy
-  - content.code.select
-  - content.action.edit
-  - content.action.view
-  - header.autohide
-  - navigation.footer
-  - navigation.tabs
-  - navigation.tabs.sticky
-  - navigation.sections
-  - navigation.top
-  - navigation.tracking
-  - navigation.instant
-  - navigation.prune
-  - navigation.indexes 
-  - toc.follow
-  - search.suggest
-  - search.highlight
-  - search.share
+    - content.code.annotate
+    - content.code.copy
+    - content.tabs.link
+    - content.code.select
+    - content.action.edit
+    - content.action.view
+    - header.autohide
+    - navigation.footer
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.top
+    - navigation.tracking
+    - navigation.instant
+    - navigation.prune
+    - navigation.indexes
+    - toc.follow
+    - search.suggest
+    - search.highlight
+    - search.share
   language: en
   palette:
     # Palette toggle for automatic mode
@@ -115,24 +117,27 @@ markdown_extensions:
   - abbr
   - pymdownx.keys
   - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
       use_pygments: true
       linenums: true
-      pygments_lang_class: true
       auto_title: true
-      anchor_linenums: true
       linenums_style: pymdownx-inline
-      line_spans: __span
+  - pymdownx.inlinehilite
+  - pymdownx.snippets:
+      auto_append:
+        - includes/abbreviations.md
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - def_list
   - pymdownx.tasklist:
       custom_checkbox: true
-  - pymdownx.inlinehilite
   - pymdownx.smartsymbols
   - pymdownx.details
-  - pymdownx.superfences:
-#      custom_fences:
-#        - name: mermaid
-#          class: mermaid
-#          format: !!python/name:pymdownx.superfences.fence_code_format
-  - pymdownx.snippets
   - pymdownx.tabbed:
       alternate_style: true
   - admonition
@@ -198,7 +203,7 @@ extra:
         - icon: material/emoticon-sad-outline
           name: This page could be improved bub. Like a lot
           data: 0
-          note: >- 
+          note: >-
             Thanks for your feedback! Help us improve this page by
             using our <a href="..." target="_blank" rel="noopener">feedback form</a>.
   consent:
