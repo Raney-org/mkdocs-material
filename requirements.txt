@@ -2,3 +2,4 @@ mkdocs-material==9.1.6
 mkdocs-glightbox==0.3.3
 pillow==9.5.0
 cairosvg==2.7.0
+mkdocs-table-reader-plugin==2.0
