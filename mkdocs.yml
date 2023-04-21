@@ -109,6 +109,7 @@ plugins:
 
 markdown_extensions:
   - footnotes
+  - tables
   - pymdownx.arithmatex:
       generic: true
   - abbr
