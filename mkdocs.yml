@@ -20,7 +20,7 @@ theme:
       css: fontawesome/brands/css3
       python: fontawesome/brands/python
       docker: fontawesome/brands/docker
-      mermaid: fontawesome/brands/mermaid
+      mermaid: material-material-design
       diagrams: fontawesome-solid-diagram-project
       data-tables: fontawesome-solid-table
     admonition:
@@ -169,6 +169,8 @@ extra:
     PYTHON: python
     DOCKER: docker
     DATATABLES: data-tables
+    MERMAID: mermaid
+    DIAGRAMS: diagrams
   social:
   - icon: fontawesome/brands/discord
     link: 'https://discord.gg/RKWgjDqkhR'
