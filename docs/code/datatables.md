@@ -1,6 +1,9 @@
 ---
 tags:
   - DATATABLES
+---
+
+# Data Table attempt
 
 === "Left Align"
 
