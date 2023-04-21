@@ -19,6 +19,7 @@ theme:
       js: fontawesome/brands/js
       css: fontawesome/brands/css3
       python: fontawesome/brands/python
+      docker: fontawesome/brands/docker
     admonition:
       note: octicons/tag-16
       abstract: octicons/checklist-16
@@ -139,6 +140,7 @@ extra:
     JavaScript: js
     CSS: css
     PYTHON: python
+    DOCKER: docker
   social:
   - icon: fontawesome/brands/discord
     link: 'https://discord.gg/RKWgjDqkhR'
@@ -196,3 +198,9 @@ nav:
           - Python: school/programming-languages/python/python-overview.md
           - Variables and Expressions: school/programming-languages/python/variables-expressions.md
   - Tags: tags.md
+  - Docker:
+    - code/README.md
+    - Wiki JS: code/wiki-js.md
+    - Audiobookshelf: code/audiobookshelf.md
+    - Pihole + Unbound: code/pihole.md
+    - YTDL: code/ytdl.md
