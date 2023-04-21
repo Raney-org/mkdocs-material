@@ -17,8 +17,6 @@ popular and flexible solution for drawing diagrams.
 
 ## Configuration
 
-[:octicons-tag-24: 8.2.0][Diagrams support]
-
 No further configuration is necessary. Advantages over a custom integration:
 
 - [x] Works with [instant loading] without any additional effort
@@ -33,7 +31,6 @@ No further configuration is necessary. Advantages over a custom integration:
     diagrams. See the section on [other diagrams] for more information why this
     is currently not implemented for all diagrams.
 
-  [Diagrams support]: https://github.com/squidfunk/mkdocs-material/releases/tag/8.2.0
   [other diagrams]: #other-diagram-types
 
 ## Usage
