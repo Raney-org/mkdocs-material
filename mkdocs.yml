@@ -177,16 +177,24 @@ extra:
     MERMAID: mermaid
     DIAGRAMS: diagrams
   social:
+  - icon: fontawesome/solid/heart
+    class: md-social__link heart
+    link: 'https://github.com/sponsors/raneydazed'
+    name: Donate
   - icon: fontawesome/brands/discord
+    class: md-social__link
     link: 'https://discord.gg/RKWgjDqkhR'
     name: Discord
   - icon: fontawesome/brands/github
+    class: md-social__link
     link: 'https://github.com/raneydazed/mkdocs-material'
     name: GitHub
   - icon: fontawesome/solid/paper-plane
+    class: md-social__link
     link: mailto:support@raneydazed.com
     name: Email
   - icon: fontawesome/brands/linkedin
+    class: md-social__link
     link: 'https://www.linkedin.com/in/raneydazed'
 
   analytics:

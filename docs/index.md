@@ -34,6 +34,6 @@ Why, [yes there is!](https://discord.gg/RKWgjDqkhR).
 
 ### What if I see a mistake in or have a suggestion about the docs?
 
-Please report any mistakes or suggestions for improving the documentation on our [discord](https://discord.gg/RKWgjDqkhR){target=_blank} or on the [Docs Repository](https://github.com/raneydazed/mkdocs-material){target=_blank}, would be much appreciated.
+Please report any mistakes or suggestions for improving the documentation on our [discord](https://discord.gg/RKWgjDqkhR){target=_blank} or on the [Docs Repository](https://github.com/raney-org/mkdocs-material){target=_blank}, would be much appreciated.
 
 * Docs: [Issues](https://github.com/raneydazed/mkdocs-material/issues){target=_blank}
