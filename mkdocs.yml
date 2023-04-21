@@ -97,8 +97,8 @@ plugins:
       #   - custom-skip-class-name
       auto_caption: false
       caption_position: bottom
-  # - social:
-  #     cards_font: Roboto
+  - social:
+      cards_font: Roboto
 
 markdown_extensions:
   - pymdownx.keys
