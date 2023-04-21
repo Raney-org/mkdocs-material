@@ -20,7 +20,7 @@ theme:
       css: fontawesome/brands/css3
       python: fontawesome/brands/python
       docker: fontawesome/brands/docker
-      mermaid: mermaid_tone1 #fontawesome/brands/mermaid
+      mermaid: fontawesome/brands/mermaid
       diagrams: fontawesome-solid-diagram-project
       data-tables: fontawesome-solid-table
     admonition:
