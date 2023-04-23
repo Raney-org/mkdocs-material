@@ -220,7 +220,7 @@ Then, it is a simple process to import the data in to the Markdown files.
     ```md title="./datatables.md"
     ...
 
-    fuck
+    {{ read_csv('./data.csv') }}
 
     ...
     ```
