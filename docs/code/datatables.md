@@ -252,7 +252,7 @@ Then, it is a simple process to import the data in to the Markdown files.
     ```md title="./datatables.md"
     ...
 
-    <!-- {{ read_excel('./Book1.xlsx', engine='openpyxl') }} -->
+    <!--read_excel('./Book1.xlsx', engine='openpyxl')-->
 
     ...
     ```
@@ -292,7 +292,7 @@ Then, it is a simple process to import the data in to the Markdown files.
         ```md title="./datatables.md"
         ...
 
-        <!-- {{ read_excel('./Book1.xlsx', engine='openpyxl', sheet_name="Sheet1") }} -->
+        <!--read_excel('./Book1.xlsx', engine='openpyxl', sheet_name="Sheet1")-->
 
         ...
         ```
