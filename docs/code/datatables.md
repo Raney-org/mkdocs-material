@@ -217,7 +217,7 @@ Then, it is a simple process to import the data in to the Markdown files.
 
     You can then add it to your :fontawesome-solid-file-arrow-down: Markdown page like this:
 
-    ```md title="./markdown.md"
+    ```md title="./datatables.md"
     ...
 
     fuck
@@ -249,7 +249,7 @@ Then, it is a simple process to import the data in to the Markdown files.
 
     And you can add it to your :fontawesome-solid-file-arrow-down: Markdown page like this:
 
-    ```md title="./markdown.md"
+    ```md title="./datatables.md"
     ...
 
     <!-- {{ read_excel('./Book1.xlsx', engine='openpyxl') }} -->
@@ -289,7 +289,7 @@ Then, it is a simple process to import the data in to the Markdown files.
 
         It would look like this:
 
-        ```md title="./markdown.md"
+        ```md title="./datatables.md"
         ...
 
         <!-- {{ read_excel('./Book1.xlsx', engine='openpyxl', sheet_name="Sheet1") }} -->
