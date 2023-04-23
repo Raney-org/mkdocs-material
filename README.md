@@ -1,5 +1,10 @@
 # mkdocs-material
+
 This does indeed be yet ANOTHER documentation page. Experimenting a bit more. Maybe this will be the last?
+
+## Badges
+
+[![GitHub Super-Linter](https://github.com/raney-org/mkdocs-material/workflows/Lint%20Code%20Base/badge.svg)](https://github.com/marketplace/actions/super-linter)
 
 ### Contributors
 

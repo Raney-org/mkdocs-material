@@ -19,10 +19,10 @@ jobs:
     if: github.ref == 'refs/heads/main'
     steps:
 
-    - name: Checkout_Contributors
+    - name: Checkout Contributors
       uses: actions/checkout@v3
 
-    - name: Add_Contributors
+    - name: Add Contributors
       uses: BobAnkh/add-contributors@master
       with:
         REPO_NAME: 'Raney-org/mkdocs-material'

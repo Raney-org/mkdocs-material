@@ -329,3 +329,5 @@ Then, it is a simple process to import the data in to the Markdown files.
 [table-reader-read_json]: https://timvink.github.io/mkdocs-table-reader-plugin/readers/#read_json
 [table-reader-read_excel]: https://timvink.github.io/mkdocs-table-reader-plugin/readers/#read_excel
 [table-reader-read_raw]: https://timvink.github.io/mkdocs-table-reader-plugin/readers/#read_raw
+
+Is the abbreviation plugin working? HTML and W3C.
