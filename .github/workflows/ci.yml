@@ -61,6 +61,9 @@ jobs:
       - name: Install Table Reader Plugin
         run: pip install mkdocs-table-reader-plugin
 
+      - name: Install openpyxl
+        run: pip install openpyxl
+
       - name: Install glightbox??
         run: pip install mkdocs-glightbox
 
