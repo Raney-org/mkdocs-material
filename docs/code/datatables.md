@@ -205,7 +205,7 @@ plugins:
 Then, it is a simple process to import the data in to the Markdown files.
 
 === "Import data from :fontawesome-solid-file-csv: CSV file"
-    
+
     Let's use a :fontawesome-solid-file-csv: CSV in the local directory. The file may look like this:
 
     ```csv title="./data.csv"

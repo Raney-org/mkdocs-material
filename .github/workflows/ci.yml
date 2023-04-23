@@ -44,12 +44,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
 
-      # - name: Install Dependencies
-      #   uses: awalsh128/cache-apt-pkgs-action@latest
-      #   with:
-      #     packages: libcairo2-dev libfreetype6-dev libffi-dev libjpeg-dev libpng-dev libz-dev
-      #     version: 1.0
-
       - name: Setup Python 3
         uses: actions/setup-python@v4
         with:

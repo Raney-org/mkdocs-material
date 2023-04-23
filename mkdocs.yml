@@ -15,14 +15,16 @@ theme:
     logo: fontawesome/solid/chair
     repo: octicons/logo-github-16
     tag:
+      chat-gpt: material/chat-processing-outline
+      css: fontawesome/brands/css3
+      data-tables: fontawesome/solid/table
+      diagrams: fontawesome/solid/diagram-project
+      docker: fontawesome/brands/docker
+      git: octicons/logo-github-16
       html: fontawesome/brands/html5
       js: fontawesome/brands/js
-      css: fontawesome/brands/css3
-      python: fontawesome/brands/python
-      docker: fontawesome/brands/docker
       mermaid: fontawesome/solid/fish
-      diagrams: fontawesome/solid/diagram-project
-      data-tables: fontawesome/solid/table
+      python: fontawesome/brands/python
     admonition:
       note: octicons/tag-16
       abstract: octicons/checklist-16
@@ -40,7 +42,7 @@ theme:
     - content.code.annotate
     - content.code.copy
     - content.tabs.link
-    - content.code.select
+    # - content.code.select
     - content.action.edit
     - content.action.view
     - header.autohide
@@ -103,7 +105,7 @@ plugins:
       draggable: true
       # skip_classes:
       #   - custom-skip-class-name
-      auto_caption: false
+      auto_caption: true
       caption_position: bottom
   - social:
       cards_font: Roboto
@@ -168,14 +170,16 @@ extra_css:
 extra:
   generator: false
   tags:
+    CHAT-GPT: chat-gpt
+    CSS: css
+    DATATABLES: data-tables
+    DIAGRAMS: diagrams
+    DOCKER: docker
+    GIT: git
     HTML5: html
     JavaScript: js
-    CSS: css
-    PYTHON: python
-    DOCKER: docker
-    DATATABLES: data-tables
     MERMAID: mermaid
-    DIAGRAMS: diagrams
+    PYTHON: python
   social:
   - icon: fontawesome/solid/heart
     class: md-social__link heart
@@ -250,3 +254,5 @@ nav:
   - Tests:
       - Mermaid: code/mermaid-test.md
       - Data Tables: code/datatables.md
+      - Chat GPT: code/chat-gpt.md
+      - Git Info: code/git-info.md
