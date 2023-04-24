@@ -21,9 +21,11 @@
 MD013: false
 MD026:
   punctuation: ".,;:!。，；:"  # List of not allowed
+MD029: false
 MD033:
   allowed_elements: ["div","script"]
-
+MD041: false
+MD046: false
 #################
 # Rules by tags #
 #################

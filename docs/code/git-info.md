@@ -210,7 +210,7 @@ First, navigate to your main repository:
 cd /home/raneydazed/pr/
 ```
 
-Now, assuming the submodule's remote repository URL is `https://github.com/user/submodule-repo.git`, you can add the submodule using the following command:
+Now, assuming the submodule's remote repository URL is `https://github.com/user/submodule-repo.git`, you can add the submodule using the following command[^5]:
 
 ```bash
 git submodule add https://github.com/user/submodule-repo.git sub-mod
@@ -218,7 +218,7 @@ git submodule add https://github.com/user/submodule-repo.git sub-mod
 
 This command will create a new directory called `sub-mod` within your main repository at `/home/raneydazed/pr/sub-mod/` and clone the submodule repository into it. The submodule's commit reference will be stored in the `.gitmodules` file in the root of your main repository.
 
-The resulting file structure will look like this:[^5]
+The resulting file structure will look like this:
 
 [^5]:
     Remember to replace `https://github.com/user/submodule-repo.git` with the actual remote repository URL of the `submodule` you want to add.
