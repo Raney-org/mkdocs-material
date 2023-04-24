@@ -46,3 +46,13 @@ For a more in-depth discussion of this topic see **section 7.3**.
 Learning the fallacies helps one think critically and avoid erroneous reasoning. It can help us avoid falling for fallacies committed by others.
 
 For a more in-depth discussion of this topic see the **chapter 7** summary and resources.
+
+## WHAT YOU NEED TO KNOW 6
+
+Hyperbole is just another term for exaggeration.
+
+Euphemisms and dysphemismsare opposites. Dysphemisms are the opposite of euphemisms; these are descriptions used to put something in a more negative light. Euphemisms make something sound more positive than it might be otherwise.
+
+A proof surrogate is used to provide some degree of authority to a claim without actually offering any genuine support.
+
+For a more in-depth discussion of this topic see **section 8.2**.
