@@ -6,7 +6,7 @@ tags:
 
 # ChatGPT Discord Bot
 
-**This is not my documentation, I am just pasting it here for ease of perusal!!!**
+**This is not my documentation, I am just pasting it here for ease of perusal!!!** [Here](https://github.com/Zero6992/chatGPT-discord-bot) is the original!
 
 > ## Build your own Discord bot using ChatGPT
 >
