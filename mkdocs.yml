@@ -111,6 +111,9 @@ plugins:
   - social:
       cards_font: Roboto
   - table-reader
+  - git-revision-date-localized:
+      enable_creation_date: true
+      type: timeago
 
 markdown_extensions:
   - footnotes
