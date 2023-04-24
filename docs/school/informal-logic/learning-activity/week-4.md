@@ -40,3 +40,9 @@ A non sequitur is a fallacy in which someone argues in an irrelevant manner so t
 The argument references emotion, but an appeal to emotion fallacy tries to get someone to do something out of emotion rather than rational assessment of the evidence. This example is not doing that but is changing the meaning of the word "sweet" between the premise and conclusion.
 
 For a more in-depth discussion of this topic see **section 7.3**.
+
+## WHAT YOU NEED TO KNOW 5
+
+Learning the fallacies helps one think critically and avoid erroneous reasoning. It can help us avoid falling for fallacies committed by others.
+
+For a more in-depth discussion of this topic see the **chapter 7** summary and resources.
