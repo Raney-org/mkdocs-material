@@ -20,3 +20,23 @@ For a more in-depth discussion of this topic see **section 8.2**.
 Fallacies are errors in reasoning. More specifically, they are common patterns of reasoning with a high likelihood of leading to false conclusions. As such, arguments are fallacious due to problems related to the inference, that is, how the conclusion is supposed to follow from the premises, rather than problems with the truth of the premises themselves.
 
 For a more in-depth discussion of this topic see the **chapter 7** introduction.
+
+## WHAT YOU NEED TO KNOW 3
+
+The fallacy of division makes conclusions about members of a population because of characteristics of the whole.
+
+The fallacy of composition occurs when one reasons that a whole group must have a certain property because its parts do. This is the opposite of the fallacy of division.
+
+For a more in-depth discussion of this topic see **section 7.3**.
+
+## WHAT YOU NEED TO KNOW 4
+
+An equivocation is when an ambiguous word is used with one meaning at one point in an argument and another meaning in another place in the argument in a misleading way.
+
+This example commits the fallacy of equivocation because the word "sweet" in the premise means that the letter was very emotionally sweet, but the conclusion about the toothache would only follow if the word "sweet" were referring to something literally sweet, like sugar.
+
+A non sequitur is a fallacy in which someone argues in an irrelevant manner so that the premises provide no support for the conclusion. The conclusion in this example appears to follow but actually does not because of an ambitguity in the premise. This is better described as an equivocation than a non sequitur.
+
+The argument references emotion, but an appeal to emotion fallacy tries to get someone to do something out of emotion rather than rational assessment of the evidence. This example is not doing that but is changing the meaning of the word "sweet" between the premise and conclusion.
+
+For a more in-depth discussion of this topic see **section 7.3**.
