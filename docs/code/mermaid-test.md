@@ -22,4 +22,14 @@ graph LR
   B ---->|No| E[Yay!];
 ```
 
+``` mermaid
+graph TD;
+A((/home/raneydazed/pr/)) --> contains --> B(.git/)
+A((/home/raneydazed/pr/)) --> contains --> C(.gitmodules)
+A((/home/raneydazed/pr/)) --> contains --> D(...)
+A((/home/raneydazed/pr/)) --> contains --> E(sub-mod/)
+E(sub-mod/) --> contains --> F(.git/)
+E(sub-mod/) --> contains --> G(...)
+```
+
 [^1]: This is a footnote. Pretty fuckin rad amirite
