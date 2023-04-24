@@ -17,9 +17,9 @@
 
 <!-- [![GitHub Super-Linter](https://github.com/raney-org/mkdocs-material/workflows/Lint%20Code%20Base/badge.svg)](https://github.com/marketplace/actions/super-linter) -->
 
-## mkdocs-material
+## Mkdocs-Material
 
-This does indeed be yet ANOTHER documentation page. Experimenting a bit more. Maybe this will be the last?
+This does indeed be yet ANOTHER documentation page. Experimenting a bit more. Maybe this will be the last? FYI, this was built by [Squidfunk](https://github.com/squidfunk/mkdocs-material) using mkdocs. I have no claim over the source code. I just love it. And yes, I'm the only contributor. Stuff it.
 
 ### Contributors
 
