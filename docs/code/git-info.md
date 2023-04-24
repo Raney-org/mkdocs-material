@@ -103,10 +103,10 @@ In that case, you can set the Git configuration and GPG signing on a per-reposit
 
 [^3]: Replace `"Your Bot Name"` and `"your-bot-email@example.com"` with the actual bot name and email address.
 
-> ```bash
-> git config user.name "Your Bot Name"
-> git config user.email "your-bot-email@example.com"
-> ```
+   ```bash
+   git config user.name "Your Bot Name"
+   git config user.email "your-bot-email@example.com"
+   ```
 
 4. Configure Git to use the GPG key for this specific repository:
 
@@ -118,9 +118,9 @@ Replace `YOUR_KEY_ID` with the actual key ID of the GPG key you want to use for 
 
 5. Configure Git to sign all commits automatically for this specific repository:
 
-```bash
-git config commit.gpgsign true
-```
+   ```bash
+   git config commit.gpgsign true
+   ```
 
 Now, when you commit changes in the `raney-org/mkdocs-materials` repository in VS Code, they will be committed as the configured bot and signed with the `GPG key`. This configuration will not affect other repositories on your system.
 
@@ -134,34 +134,34 @@ Here's a step-by-step guide:
 
 2. Add the following content to the `commit-and-push.sh` file:
 
-```bash
-#!/bin/bash
-# Change the commit message to your desired message
-commit_message="Auto-commit: Update files"
+   ```bash
+   #!/bin/bash
+   # Change the commit message to your desired message
+   commit_message="Auto-commit: Update files"
 
-# Add all changes to staging
-git add .
+   # Add all changes to staging
+   git add .
 
-# Commit the changes with the specified commit message
-git commit -m "$commit_message"
+   # Commit the changes with the specified commit message
+   git commit -m "$commit_message"
 
-# Push the changes to the remote repository
-git push
-```
+   # Push the changes to the remote repository
+   git push
+   ```
 
 3. Save the file and close it.
 
 4. Make the script executable by running the following command in the integrated terminal in VS Code:
 
-```bash
-chmod +x commit-and-push.sh
-```
+   ```bash
+   chmod +x commit-and-push.sh
+   ```
 
 5. Now, whenever you want to auto-commit and push your changes to the GitHub remote, simply run the script in the integrated terminal:
 
-```bash
-./commit-and-push.sh
-```
+   ```bash
+   ./commit-and-push.sh
+   ```
 
 This script will stage all changes, commit them with the specified commit message, and push the changes to the remote repository.
 
@@ -285,3 +285,404 @@ Yes, it's a common and recommended practice to work directly on tracking branche
 3. Use descriptive branch names: When creating a new branch, use a descriptive name that reflects the purpose of the branch (e.g., `feature/user-authentication` or `bugfix/payment-processing`). This makes it easier to understand the purpose of each branch and helps keep your repository organized.
 
 4. Pull changes from the main branch regularly: While working on a tracking branch or feature branch, it's important to regularly pull changes from the main branch to keep your branch up-to-date. This helps prevent potential merge conflicts when you're ready to merge your changes back into the main branch.
+
+   ```shell
+   git checkout your_tracking_branch
+   git pull origin main
+   ```
+
+5. Review and test changes before merging: Before merging your tracking branch or feature branch into the main branch, ensure that your changes have been thoroughly reviewed and tested. This helps maintain the stability and quality of the main branch.
+
+6. Merge or rebase: When you're ready to merge your changes back into the main branch, you can use the git merge command or, alternatively, use git rebase to keep a linear commit history. Rebasing can make the commit history cleaner and easier to understand, but it requires more care and attention, as it rewrites the commit history.
+
+    ```s
+    # Merging
+    git checkout main
+    git merge your_tracking_branch
+
+    # Rebasing
+    git checkout your_tracking_branch
+    git rebase main
+    git checkout main
+    git merge your_tracking_branch
+    ```
+
+7. Delete branches after merging: Once you've successfully merged a tracking branch or feature branch into the main branch, delete the branch to keep your repository clean and organized.
+
+    ```shell
+    git branch -d your_tracking_branch
+    ```
+
+By following these best practices, you can maintain an organized, stable, and clean Git repository while collaborating with your team on various tasks.
+
+### how do I use the cache action to cache this
+
+I asked it how to more or less use the cache action in github to speed up actions. Here is an (collapsed) example of `ci.yml` in the root directory of my GH repo, the full path is `.github/workflows/ci.yml`
+
+```shell
+name: ci 
+on:
+  push:
+    branches:
+      - master 
+      - main
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: write
+
+concurrency:
+  group: ${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  add-contributors:
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main'
+    steps:
+
+    - name: Checkout Contributors
+      uses: actions/checkout@v3
+
+    - name: Add Contributors
+      uses: BobAnkh/add-contributors@master
+      with:
+        REPO_NAME: 'Raney-org/mkdocs-material'
+        CONTRIBUTOR: '### Contributors'
+        COLUMN_PER_ROW: '6'
+        ACCESS_TOKEN: ${{ secrets.PAC_TOKEN }}
+        IMG_WIDTH: '100'
+        FONT_SIZE: '14'
+        PATH: '/README.md'
+        COMMIT_MESSAGE: 'docs(README): update contributors'
+        AVATAR_SHAPE: 'round'
+
+  build:
+    runs-on: ubuntu-latest
+    if: github.event.repository.fork == false && github.event_name != 'pull_request'
+    outputs:
+      url: ${{ steps.cloudflare.outputs.url }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Setup Python 3
+        uses: actions/setup-python@v4
+        with:
+          python-version: 3.x
+
+      - name: Upgrade PIP
+        run: pip install --upgrade pip
+
+      - name: Install wheel
+        run: pip install wheel
+
+      - name: Install Cairosvg
+        run: pip install pillow cairosvg
+
+      - name: Install Table Reader Plugin
+        run: pip install mkdocs-table-reader-plugin
+
+      - name: Install openpyxl
+        run: pip install openpyxl
+
+      - name: Install glightbox??
+        run: pip install mkdocs-glightbox
+
+      - name: Cache
+        uses: actions/cache@v2
+        with:
+          key: ${{ github.ref }}
+          path: .cache
+
+      - name: Install Mkdocs Material
+        run: pip install mkdocs-material
+
+      - name: Build mkdocs
+        run: mkdocs build
+
+      - name: Publish to Cloudflare Pages
+        id: cloudflare
+        uses: cloudflare/pages-action@1
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          projectName: mkdocs-material
+          directory: site
+          gitHubToken: ${{ secrets.PAC_TOKEN }}
+
+  webhook:
+    name: 'webhook'
+    runs-on: self-hosted
+    needs: [build]
+    if: always() && github.event_name != 'pull_request'
+    steps:
+      - name: Workflow-Conclusion Actions
+        uses: technote-space/workflow-conclusion-action@v3
+
+      - name: Send Discord Notification
+        uses: sarisia/actions-status-discord@v1
+        with:
+          webhook: ${{ secrets.DISCORD_WEBHOOK }}
+          description: "URL: ${{ needs.build.outputs.url }}"
+          status: ${{ env.WORKFLOW_CONCLUSION }}
+```
+
+To cache the dependencies for your GitHub Actions workflow, you can use the `actions/cache@v2` action. In your case, you can cache the Python packages installed with `pip`. Here's an updated version of your workflow that caches the Python packages:
+
+```shell
+build:
+  runs-on: ubuntu-latest
+  if: github.event.repository.fork == false && github.event_name != 'pull_request'
+  outputs:
+    url: ${{ steps.cloudflare.outputs.url }}
+  steps:
+    - name: Checkout
+      uses: actions/checkout@v3
+
+    - name: Setup Python 3
+      uses: actions/setup-python@v4
+      with:
+        python-version: 3.x
+
+    - name: Upgrade PIP
+      run: pip install --upgrade pip
+
+    - name: Cache Python packages
+      uses: actions/cache@v2
+      with:
+        path: ~/.cache/pip
+        key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt', '**/setup.py') }}
+        restore-keys: |
+          ${{ runner.os }}-pip-
+
+    - name: Install wheel
+      run: pip install wheel
+
+    - name: Install Cairosvg
+      run: pip install pillow cairosvg
+
+    - name: Install Table Reader Plugin
+      run: pip install mkdocs-table-reader-plugin
+
+    - name: Install openpyxl
+      run: pip install openpyxl
+
+    - name: Install glightbox??
+      run: pip install mkdocs-glightbox
+
+    - name: Install Mkdocs Material
+      run: pip install mkdocs-material
+
+    - name: Build mkdocs
+      run: mkdocs build
+```
+
+!!! note
+
+    I kept the cache action out of my submission to the bot.
+
+This workflow now includes a "Cache Python packages" step that uses `actions/cache@v2` to cache the Python packages installed with `pip`. The cache key is based on the hash of any `requirements.txt` and `setup.py` files in your repository. If these files change, the cache will be invalidated, and new packages will be installed and cached.
+
+Please note that if you don't have a `requirements.txt` or `setup.py` file in your repository, you can create a `requirements.txt` file and list all the packages you want to install:
+
+```bash
+wheel
+pillow
+cairosvg
+mkdocs-table-reader-plugin
+openpyxl
+mkdocs-glightbox
+mkdocs-material
+```
+
+Then, you can simplify the installation steps in your workflow by using:
+
+```shell
+    - name: Install Python packages
+      run: pip install -r requirements.txt
+```
+
+Here's the updated version of your workflow using the requirements.txt file:
+
+```shell
+build:
+  runs-on: ubuntu-latest
+  if: github.event.repository.fork == false && github.event_name != 'pull_request'
+  outputs:
+    url: ${{ steps.cloudflare.outputs.url }}
+  steps:
+    - name: Checkout
+      uses: actions/checkout@v3
+
+    - name: Setup Python 3
+      uses: actions/setup-python@v4
+      with:
+        python-version: 3.x
+
+    - name: Upgrade PIP
+      run: pip install --upgrade pip
+
+    - name: Cache Python packages
+      uses: actions/cache@v2
+      with:
+        path: ~/.cache/pip
+        key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
+        restore-keys: |
+          ${{ runner.os }}-pip-
+
+    - name: Install Python packages
+      run: pip install -r requirements.txt
+
+    - name: Build mkdocs
+      run: mkdocs build
+```
+
+This workflow now uses the `requirements.txt` file to install all Python packages in a single step, making the workflow cleaner and easier to maintain. The cache action will also use the `requirements.txt` file to determine when to invalidate the cache.
+
+### is there a way to use the cache action with the pip install commands instead of using a requirements.txt file
+
+Yes, you can use the cache action with the `pip install` commands without using a `requirements.txt` file. You can create a cache key based on the content of the workflow file itself or use a custom cache key. Here's an example of how to modify your workflow to cache Python packages without a `requirements.txt` file:
+
+```shell
+build:
+  runs-on: ubuntu-latest
+  if: github.event.repository.fork == false && github.event_name != 'pull_request'
+  outputs:
+    url: ${{ steps.cloudflare.outputs.url }}
+  steps:
+    - name: Checkout
+      uses: actions/checkout@v3
+
+    - name: Setup Python 3
+      uses: actions/setup-python@v4
+      with:
+        python-version: 3.x
+
+    - name: Upgrade PIP
+      run: pip install --upgrade pip
+
+    - name: Cache Python packages
+      uses: actions/cache@v2
+      with:
+        path: ~/.cache/pip
+        key: ${{ runner.os }}-pip-${{ hashFiles('.github/workflows/your-workflow-file.yml') }}
+        restore-keys: |
+          ${{ runner.os }}-pip-
+
+    - name: Install wheel
+      run: pip install wheel
+
+    - name: Install Cairosvg
+      run: pip install pillow cairosvg
+
+    - name: Install Table Reader Plugin
+      run: pip install mkdocs-table-reader-plugin
+
+    - name: Install openpyxl
+      run: pip install openpyxl
+
+    - name: Install glightbox??
+      run: pip install mkdocs-glightbox
+
+    - name: Install Mkdocs Material
+      run: pip install mkdocs-material
+
+    - name: Build mkdocs
+      run: mkdocs build
+```
+
+In this example, I've changed the cache key to be based on the content of the workflow file itself: `#!shell ${{ hashFiles('.github/workflows/your-workflow-file.yml') }}`. Replace `your-workflow-file.yml` with the actual name of your workflow file. This way, the cache will be invalidated if the workflow file changes, which might include changes to the package installation commands.
+
+Please note that this approach is less precise than using a `requirements.txt` file, as any change to the workflow file will invalidate the cache, even if the installed packages remain the same. However, it still allows you to cache Python packages without using a `requirements.txt` file.
+
+### Can you add conditionals with cache hit and cache miss
+
+Certainly! You can use the `cache-hit` output of the `actions/cache` step to add conditional steps based on whether the cache was hit or missed. Here's an example of how to modify your workflow to include conditionals for cache hit and cache miss:
+
+```shell
+build:
+  runs-on: ubuntu-latest
+  if: github.event.repository.fork == false && github.event_name != 'pull_request'
+  outputs:
+    url: ${{ steps.cloudflare.outputs.url }}
+  steps:
+    - name: Checkout
+      uses: actions/checkout@v3
+
+    - name: Setup Python 3
+      uses: actions/setup-python@v4
+      with:
+        python-version: 3.x
+
+    - name: Upgrade PIP
+      run: pip install --upgrade pip
+
+    - name: Cache Python packages
+      id: cache-pip
+      uses: actions/cache@v2
+      with:
+        path: ~/.cache/pip
+        key: ${{ runner.os }}-pip-${{ hashFiles('.github/workflows/your-workflow-file.yml') }}
+        restore-keys: |
+          ${{ runner.os }}-pip-
+
+    - name: Install packages on cache miss
+      if: steps.cache-pip.outputs.cache-hit != 'true'
+      run: |
+        pip install wheel
+        pip install pillow cairosvg
+        pip install mkdocs-table-reader-plugin
+        pip install openpyxl
+        pip install mkdocs-glightbox
+        pip install mkdocs-material
+
+    - name: Build mkdocs
+      run: mkdocs build
+```
+
+In this example, I've added an `id` to the "Cache Python packages" step, which is `cache-pip`. Then, I've combined all the package installation commands into a single step called "Install packages on cache miss" and added a conditional `if` statement:
+
+```shell
+if: steps.cache-pip.outputs.cache-hit != 'true'
+```
+
+This step will only run if the cache is missed, meaning the packages will not be installed if the cache is hit. Replace `your-workflow-file.yml` with the actual name of your workflow file.
+
+This approach allows you to conditionally execute steps based on the cache hit or cache miss status, reducing unnecessary package installations when the cache is hit.
+
+### What is git squash
+
+Git squash is a technique used to combine multiple commits into a single commit, which helps create a cleaner and more linear commit history. Squashing is often used when you have a series of small commits that represent incremental changes or work-in-progress updates, and you want to merge them into a single, meaningful commit before merging into another branch or pushing to a remote repository.
+
+Git squash is typically performed using an interactive rebase. Here's a step-by-step guide on how to squash commits:
+
+1. Make sure you're on the correct branch that contains the commits you want to squash. If not, switch to that branch:
+
+    ```shell
+    git checkout your-feature-branch
+    ```
+
+2. Start an interactive rebase for the last `n` commits, where `n` is the number of commits you want to squash:
+
+    ```shell
+    git rebase -i HEAD~n
+    ```
+
+    Replace `n` with the actual number of commits you want to squash.
+
+3. Your default text editor will open with a list of the last `n` commits, each prefixed with the word `pick`. To squash a commit, change the word `pick` to `squash` or `s` for that commit. Leave the first commit in the list with `pick`.
+
+    ```shell
+    pick a1b2c3d First commit message
+    squash e4f5g6h Second commit message
+    squash i7j8k9l Third commit message
+    ```
+
+    Save and close the editor.
+
+4. Git will now combine the selected commits into one. A new editor window will open, allowing you to edit the commit message for the combined commit. Update the commit message as needed, save, and close the editor.
+
+5. Git will perform the squash, and your commit history will now have the selected commits combined into a single commit with the updated commit message.
+
+Please note that squashing commits rewrites the commit history. Be cautious when using squash on commits that have already been pushed to a remote repository, as it may cause conflicts or issues for other collaborators. It's generally safe to squash commits that have not been pushed or shared with others.
