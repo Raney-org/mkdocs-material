@@ -25,6 +25,7 @@ theme:
       js: fontawesome/brands/js
       mermaid: fontawesome/solid/fish
       python: fontawesome/brands/python
+      school: material/account-school-outline
     admonition:
       note: octicons/tag-16
       abstract: octicons/checklist-16
@@ -180,6 +181,7 @@ extra:
     JavaScript: js
     MERMAID: mermaid
     PYTHON: python
+    SCHOOL: school
   social:
   - icon: fontawesome/solid/heart
     class: md-social__link heart
@@ -239,6 +241,7 @@ nav:
         - Book Excerpts: school/informal-logic/book-excerpts.md
         - Learning Activity:
           - Week-3: school/informal-logic/learning-activity/week-3.md
+          - Week-4: school/informal-logic/learning-activity/week-4.md
     - Fundamentals of Programming Languages:
         - General Notes: school/programming-languages/notes.md
         - Python:

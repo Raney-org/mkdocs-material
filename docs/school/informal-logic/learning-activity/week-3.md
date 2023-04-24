@@ -1,4 +1,9 @@
-# Week 3 learning activity notes
+---
+tags:
+  - SCHOOL
+---
+
+# Week 3 learning activity
 
 ## WHAT YOU NEED TO KNOW
 
