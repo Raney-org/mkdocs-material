@@ -80,6 +80,9 @@ jobs:
       - name: Install Table Reader Plugin
         run: pip install mkdocs-table-reader-plugin
 
+      - name: Install Git Revision Plugin
+        run: pip install mkdocs-git-revision-date-localized-plugin
+
       - name: Install openpyxl
         run: pip install openpyxl
 
@@ -87,7 +90,7 @@ jobs:
         run: pip install mkdocs-glightbox
 
       - name: Cache
-        uses: actions/cache@v2
+        uses: actions/cache@v3
         with:
           key: ${{ github.ref }}
           path: .cache
