@@ -304,7 +304,7 @@ Then, it is a simple process to import the data in to the Markdown files.
         [pandas-read_excel-sheet_name]: https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.read_excel.html#:~:text=sheet_namestr%2C%20int%2C%20list%2C%20or%20None%2C%20default%200
 
 === "Import data from other file types"
-
+    
     The plugin [`mkdocs-table-reader-plugin`][table-reader-docs] also provides readers for other formats:
 
     <div class="mdx-columns" markdown>
