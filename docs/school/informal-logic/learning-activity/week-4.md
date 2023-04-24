@@ -14,3 +14,9 @@ The word "always" does not qualify (or weaken) a claim, so it is not a weasel wo
 "It follows that" is a conclusion indicator, not a weasel word.
 
 For a more in-depth discussion of this topic see **section 8.2**.
+
+## WHAT YOU NEED TO KNOW 2
+
+Fallacies are errors in reasoning. More specifically, they are common patterns of reasoning with a high likelihood of leading to false conclusions. As such, arguments are fallacious due to problems related to the inference, that is, how the conclusion is supposed to follow from the premises, rather than problems with the truth of the premises themselves.
+
+For a more in-depth discussion of this topic see the **chapter 7** introduction.
