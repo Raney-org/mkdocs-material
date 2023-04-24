@@ -1,6 +1,21 @@
-# Badges
+<p align="center">
+  <a href="https://www.ranevm.com/">
+    <img src="https://raw.githubusercontent.com/squidfunk/mkdocs-material/master/.github/assets/logo.svg" width="320" alt="Material for MkDocs">
+  </a>
+</p>
 
-[![GitHub Super-Linter](https://github.com/raney-org/mkdocs-material/workflows/Lint%20Code%20Base/badge.svg)](https://github.com/marketplace/actions/super-linter)
+<p align="center">
+  <a href="https://github.com/raney-org/mkdocs-material/actions"><img
+    src="https://github.com/squidfunk/mkdocs-material/workflows/build/badge.svg?branch=master"
+    alt="Build"
+  /></a>
+  <a href="https://github.com/marketplace/actions/super-linter"><img
+    src="https://github.com/raney-org/mkdocs-material/workflows/Lint%20Code%20Base/badge.svg"
+    alt="GitHub Super-Linter"
+  /></a>
+</p>
+
+<!-- [![GitHub Super-Linter](https://github.com/raney-org/mkdocs-material/workflows/Lint%20Code%20Base/badge.svg)](https://github.com/marketplace/actions/super-linter) -->
 
 ## mkdocs-material
 
