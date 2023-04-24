@@ -221,9 +221,9 @@ This command will create a new directory called `sub-mod` within your main repos
 The resulting file structure will look like this:[^5]
 
 [^5]:
-    Remember to replace `https://github.com/user/submodule-repo.git` with the actual remote repository URL of the submodule you want to add.
+    Remember to replace `https://github.com/user/submodule-repo.git` with the actual remote repository URL of the `submodule` you want to add.
 
-```bash
+```shell
 /home/raneydazed/pr/
 │   .git/
 │   .gitmodules
@@ -232,3 +232,56 @@ The resulting file structure will look like this:[^5]
     │   .git/
     │   ...
 ```
+
+### Can you expand on git tracking branches and how they are used, as compared to comitting to main/master
+
+#### Use cases and reasons for using tracking branches
+
+**Collaboration:** Tracking branches are particularly useful when you collaborate with a team on a project. Each team member can create their own local tracking branches to work on different features or bug fixes. These tracking branches will be connected to remote branches, allowing team members to easily stay in sync with the remote repository and share their work.
+
+**Isolation:** Tracking branches allow you to isolate your work from the main branch. This is helpful when you're working on a new feature or bug fix that might take some time to complete. By using a separate tracking branch, you can experiment and make changes without affecting the stability of the main branch.
+
+#### How tracking branches work compared to committing to the main branch
+
+When you commit changes to the main branch, you're directly modifying the primary branch in your repository. This can be risky, especially if you're working on a large-scale project with multiple contributors. By committing directly to the main branch, your changes might conflict with others' work, or you might accidentally introduce bugs or unstable features.
+
+On the other hand, when you use a tracking branch, you create a separate branch that is connected to a remote branch. You can commit your changes to this tracking branch without affecting the main branch. Once your work is complete and tested, you can merge your tracking branch into the main branch, ensuring that your changes are integrated smoothly and safely.
+
+**Checking the tracking status:** To see the tracking status of your branches, you can use the following command:
+
+```shell
+   git branch -vv
+```
+
+???+ note
+
+    This command will display a list of your local branches along with their tracking relationships and the differences between the local and remote branches.
+
+**Merging changes:** Once you've completed your work on a tracking branch and tested it, you can merge the changes back into the main branch. First, switch to the main branch:
+
+```shell
+   git checkout main
+```
+
+Then, merge your tracking branch into the main branch:[^6]
+
+[^6]:
+    Replace `<your_tracking_branch>` with the name of your tracking branch. This command will merge the changes from your tracking branch into the main branch, ensuring a smooth and safe integration.
+
+```shell
+   git merge <your_tracking_branch>
+```
+
+In summary, tracking branches provide a convenient way to collaborate, isolate your work, and synchronize changes with remote branches. They allow you to work on features or bug fixes independently without affecting the main branch and help maintain a stable and clean project history.
+
+### Do you normally work directly on your tracking branch and not on main or master? is there any best practices surrounding tracking branches
+
+Yes, it's a common and recommended practice to work directly on tracking branches (or any feature/bugfix branches) rather than working directly on the main or master branch. This approach is part of the best practices surrounding branch management in Git, which include:
+
+1. Keep the main branch stable: The main or master branch should always be stable and production-ready. By working directly on tracking branches or feature branches, you ensure that any experimental or in-progress work does not affect the stability of the main branch.
+
+2. Create branches for features or bug fixes: When working on a new feature or fixing a bug, create a separate branch (often a tracking branch) for that specific task. This allows you to isolate your work, making it easier to manage and review changes.
+
+3. Use descriptive branch names: When creating a new branch, use a descriptive name that reflects the purpose of the branch (e.g., `feature/user-authentication` or `bugfix/payment-processing`). This makes it easier to understand the purpose of each branch and helps keep your repository organized.
+
+4. Pull changes from the main branch regularly: While working on a tracking branch or feature branch, it's important to regularly pull changes from the main branch to keep your branch up-to-date. This helps prevent potential merge conflicts when you're ready to merge your changes back into the main branch.
