@@ -161,7 +161,7 @@ tags:
 
 1. Go to <https://bard.google.com/>
 
-2. Open console with `F12`
+2. Open console with ++F12++
 
 3. Open `Application` tab > Cookies
 
