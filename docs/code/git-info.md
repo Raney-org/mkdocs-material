@@ -233,17 +233,6 @@ The resulting file structure will look like this:
     │   ...
 ```
 
-or:
-
-```mermaid
-graph LR
-A[/home/raneydazed/pr/] --> B[.git/];
-A --> C[.gitmodules];
-A --> D[sub-mod/];
-D --> E[.git/];
-D --> F[...];
-```
-
 ### Can you expand on git tracking branches and how they are used, as compared to comitting to main/master
 
 #### Use cases and reasons for using tracking branches
