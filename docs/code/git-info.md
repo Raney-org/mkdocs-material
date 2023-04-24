@@ -233,6 +233,12 @@ The resulting file structure will look like this:
     │   ...
 ```
 
+``` mermaid
+graph TD
+A[/home/raneydazed/pr/] -->|git submodule add ../sub-mod/| B[/home/raneydazed/pr/sub-mod/]
+A/.git -->|git submodule add ../sub-mod/| B/.git
+```
+
 ### Can you expand on git tracking branches and how they are used, as compared to comitting to main/master
 
 #### Use cases and reasons for using tracking branches
