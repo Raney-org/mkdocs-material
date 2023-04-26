@@ -25,6 +25,7 @@ theme:
       js: fontawesome/brands/js
       mermaid: fontawesome/solid/fish
       python: fontawesome/brands/python
+      radarr: material/play-outline
       school: material/account-school-outline
     admonition:
       note: octicons/tag-16
@@ -185,6 +186,7 @@ extra:
     MERMAID: mermaid
     PYTHON: python
     SCHOOL: school
+    RADARR: radarr
   social:
   - icon: fontawesome/solid/heart
     class: md-social__link heart
@@ -257,6 +259,8 @@ nav:
     - Audiobookshelf: code/audiobookshelf.md
     - Pihole + Unbound: code/pihole.md
     - YTDL: code/ytdl.md
+    Info:
+      - Radarr: code/radarr.md
   - Tests:
       - Mermaid: code/mermaid-test.md
       - Data Tables: code/datatables.md
