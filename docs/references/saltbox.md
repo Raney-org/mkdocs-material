@@ -13,3 +13,5 @@ wordpress_docker_envs_default:
   WORDPRESS_DB_PASSWORD: "password321"
   WORDPRESS_DB_NAME: "{{ wordpress_name }}"
 ```
+
+to install another instance of mariadb, you'd run: `#!bash sb install mariadb -e mariadb_name=mariadb2`
