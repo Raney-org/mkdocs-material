@@ -259,8 +259,8 @@ nav:
     - Audiobookshelf: code/audiobookshelf.md
     - Pihole + Unbound: code/pihole.md
     - YTDL: code/ytdl.md
-    Info:
-      - Radarr: code/radarr.md
+    - Info:
+        - Radarr: code/radarr.md
   - Tests:
       - Mermaid: code/mermaid-test.md
       - Data Tables: code/datatables.md
