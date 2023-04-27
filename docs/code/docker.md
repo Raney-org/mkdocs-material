@@ -187,7 +187,7 @@ As of `Docker` version `20.10.14`, the complete list of available subcommands in
 
 ???+ abstract
 
-  ``` sh title="Output"
+    ``` sh title="Output"
     attach      Attach local standard input, output, and error streams to a running container
     build       Build an image from a Dockerfile
     commit      Create a new image from a container's changes
@@ -228,7 +228,7 @@ As of `Docker` version `20.10.14`, the complete list of available subcommands in
     update      Update configuration of one or more containers
     version     Show the `Docker` version information
     wait        Block until one or more containers stop, then print their exit codes
-```
+    ```
 
 To view the options available to a specific command, type:
 
@@ -256,7 +256,7 @@ docker run hello-world
 
 The output will indicate that `Docker` in working correctly:
 
-``` sh "Output"
+``` sh title="Output"
 Unable to find image 'hello-world:latest' locally
 latest: Pulling from library/hello-world
 2db29710123e: Pull complete
@@ -279,7 +279,7 @@ docker search ubuntu
 
 The script will crawl Docker Hub and return a listing of all images whose name matches the search string. In this case, the output will be similar to this:
 
-``` sh "Output"
+``` sh title="Output"
 NAME                             DESCRIPTION                                     STARS     OFFICIAL   AUTOMATED
 ubuntu                           Ubuntu is a Debian-based Linux operating sys…   14048     [OK]
 websphere-liberty                WebSphere Liberty multi-architecture images …   283       [OK]
@@ -299,7 +299,7 @@ docker pull ubuntu
 
 You’ll see the following output:
 
-``` sh "Output"
+``` sh title="Output"
 Using default tag: latest
 latest: Pulling from library/ubuntu
 e0b25ef51634: Pull complete
@@ -318,7 +318,7 @@ docker images
 
 The output will look similar to the following:
 
-``` sh "Output"
+``` sh title="Output"
 REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
 ubuntu              latest              1d622ef86b13        3 weeks ago         73.9MB
 hello-world         latest              bf756fb1ae65        4 months ago        13.3kB
@@ -340,7 +340,7 @@ docker run -it ubuntu
 
 Your command prompt should change to reflect the fact that you’re now working inside the container and should take this form:
 
-``` sh "Output"
+``` sh title="Output"
 root@d9b100f2f636:/#
 ```
 
