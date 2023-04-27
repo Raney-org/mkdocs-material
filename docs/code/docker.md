@@ -490,7 +490,7 @@ You can also build Images from a `Dockerfile`, which lets you automate the insta
 
 Now let’s share the new image with others so they can create containers from it.
 
-## Step 8—Pushing `Docker` Images to a `Docker` Repository
+## Step 8—Pushing Docker Images to a Docker Repository
 
 The next logical step after creating a new image from an existing image is to share it with a select few of your friends, the whole world on Docker Hub, or other Docker registry that you have access to. To push an image to [Docker Hub] or any other Docker registry, you must have an account there.
 
