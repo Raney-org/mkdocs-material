@@ -44,7 +44,7 @@ The [**`Docker`**] installation package available in the official Ubuntu reposit
 
 First, update your existing list of packages:
 
-```shell "Update Packages"
+```shell title="Update Packages"
 sudo apt update
 ```
 
@@ -80,7 +80,7 @@ apt-cache policy docker-ce
 
 You’ll see output like this, although the version number for `Docker` may be different:
 
-```sh "Output of apt-cache policy docker-ce"
+```sh title="Output of apt-cache policy docker-ce"
 docker-ce:
   Installed: (none)
   Candidate: 5:20.10.14~3-0~ubuntu-jammy
@@ -155,7 +155,7 @@ Confirm that your user is now added to the `docker` group by typing:
 groups
 ```
 
-``` shell "Output"
+``` shell title="Output"
 sammy sudo docker
 ```
 
