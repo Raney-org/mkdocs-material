@@ -259,10 +259,12 @@ nav:
     - Audiobookshelf: code/audiobookshelf.md
     - Pihole + Unbound: code/pihole.md
     - YTDL: code/ytdl.md
-    - Info:
+    - Starr Suite:
         - Radarr: code/radarr.md
   - Tests:
       - Mermaid: code/mermaid-test.md
       - Data Tables: code/datatables.md
       - Chat GPT: code/chat-gpt.md
-      - Git Info: code/git-info.md
+  - Git:
+    
+    - git/git-info.md
