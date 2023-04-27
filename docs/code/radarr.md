@@ -11,7 +11,9 @@ So I migrated from sqlite to postgresql today on my radarr4k container. It seeme
 
   [Here]: https://wiki.servarr.com/radarr/postgres-setup
 
-[This](https://github.com/Radarr/Radarr/issues/7387) issue has more info on how someone did some trouble shooting as well, if you have any questions about it.
+[This] issue has more info on how someone did some trouble shooting as well, if you have any questions about it.
+
+  [This]: https://github.com/Radarr/Radarr/issues/7387
 
 A saltbox specific reference for the pgloader command is here:
 
