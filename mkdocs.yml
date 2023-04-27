@@ -114,6 +114,7 @@ plugins:
   - table-reader
   - git-revision-date-localized:
       enable_creation_date: true
+      fallback_to_build_date: true
       type: timeago
 
 markdown_extensions:
@@ -265,6 +266,7 @@ nav:
       - Mermaid: code/mermaid-test.md
       - Data Tables: code/datatables.md
       - Chat GPT: code/chat-gpt.md
+      - Docker: code/docker.md
   - Git:
-    
-    - git/git-info.md
+    - git/README.MD
+    - Git Info: git/git-info.md
