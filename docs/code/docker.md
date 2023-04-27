@@ -543,7 +543,7 @@ After pushing an image to a registry, it should be listed on your account’s da
 
 If a push attempt results in an error of this sort, then you likely did not log in:
 
-``` sh title="Output"
+``` yml title="Output"
 The push refers to a repository [docker.io/sammy/ubuntu-nodejs]
 e3fbbfb44187: Preparing
 5f70bf18a086: Preparing
