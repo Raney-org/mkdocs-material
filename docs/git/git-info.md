@@ -101,13 +101,6 @@ In that case, you can set the Git configuration and GPG signing on a per-reposit
 
 3. Configure Git with the bot's name and email address for this specific repository:[^3]
 
-[^3]: Replace `"Your Bot Name"` and `"your-bot-email@example.com"` with the actual bot name and email address.
-
-   ```bash
-   git config user.name "Your Bot Name"
-   git config user.email "your-bot-email@example.com"
-   ```
-
 4. Configure Git to use the GPG key for this specific repository:
 
 ```bash
@@ -706,3 +699,10 @@ Git squash is typically performed using an interactive rebase. Here's a step-by-
 5. Git will perform the squash, and your commit history will now have the selected commits combined into a single commit with the updated commit message.
 
 Please note that squashing commits rewrites the commit history. Be cautious when using squash on commits that have already been pushed to a remote repository, as it may cause conflicts or issues for other collaborators. It's generally safe to squash commits that have not been pushed or shared with others.
+
+[^3]:
+    Replace `"Your Bot Name"` and `"your-bot-email@example.com"` with the actual bot name and email address.
+    ```bash
+    git config user.name "Your Bot Name"
+    git config user.email "your-bot-email@example.com"
+    ```

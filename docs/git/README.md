@@ -2,4 +2,4 @@
 
 Here be some [info]
 
-  [info]: ..//git/git-info.md#where-to-start
+  [info]: ../git/git-info.md#where-to-start
