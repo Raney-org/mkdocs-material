@@ -40,7 +40,7 @@ To follow this tutorial, you will need the following:
 
 ## Step 1 — Installing `Docker`
 
-The [**`Docker`**] installation package available in the official Ubuntu repository may not be the latest version. To ensure we get the latest version, we’ll install `Docker` from the official `Docker` repository. To do that, we’ll add a new package source, add the GPG key from `Docker` to ensure the downloads are valid, and then install the package.
+The [**Docker**] installation package available in the official Ubuntu repository may not be the latest version. To ensure we get the latest version, we’ll install `Docker` from the official `Docker` repository. To do that, we’ll add a new package source, add the GPG key from `Docker` to ensure the downloads are valid, and then install the package.
 
 First, update your existing list of packages:
 
