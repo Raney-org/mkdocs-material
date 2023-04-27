@@ -367,7 +367,7 @@ node -v
 
 You’ll see the version number displayed in your terminal:
 
-``` sh "Output"
+``` sh title="Output"
 v12.22.9
 Any changes you make inside the container only apply to that container.
 
@@ -386,7 +386,7 @@ docker ps
 
 You will see output similar to the following:
 
-``` sh "Output"
+``` sh title="Output"
 CONTAINER ID        IMAGE               COMMAND             CREATED
 ```
 
@@ -400,7 +400,7 @@ docker ps -a
 
 You’ll see output similar to this:
 
-``` sh "Output"
+``` sh title="Output"
 CONTAINER ID   IMAGE         COMMAND   CREATED         STATUS                     PORTS     NAMES
 1c08a7a0d0e4   ubuntu        "bash"     About a minute ago   Exited (0) 7 seconds ago             dazzling_taussig
 587000e49d53   hello-world   "/hello"   5 minutes ago        Exited (0) 5 minutes ago             adoring_kowalevski
@@ -412,7 +412,7 @@ To view the latest container you created, pass it the `-l` switch:
 docker ps -l
 ```
 
-``` sh "Output"
+``` sh title="Output"
 CONTAINER ID   IMAGE     COMMAND   CREATED         STATUS                     PORTS     NAMES
 1c08a7a0d0e4   ubuntu    "bash"    3 minutes ago   Exited (0) 2 minutes ago             dazzling_taussig
 ```
@@ -425,7 +425,7 @@ To start a stopped container, use `docker start`, followed by the container ID o
 
 The container will start, and you can use `#!shell docker ps` to see its status:
 
-``` sh "Output"
+``` sh title="Output"
 CONTAINER ID   IMAGE     COMMAND   CREATED         STATUS         PORTS     NAMES
 1c08a7a0d0e4   ubuntu    "bash"    6 minutes ago   Up 8 seconds             dazzling_taussig
 ```
@@ -478,7 +478,7 @@ docker images
 
 You’ll see output like this:
 
-``` sh "Output"
+``` sh title="Output"
 REPOSITORY               TAG                 IMAGE ID            CREATED             SIZE
 sammy/ubuntu-nodejs   latest              7c1f35226ca6        7 seconds ago       179MB
 ...
@@ -525,7 +525,7 @@ docker push sammy/ubuntu-nodejs
 
 The process may take some time to complete as it uploads the images, but when completed, the output will look like this:
 
-``` sh "Output"
+``` sh title="Output"
 The push refers to a repository [docker.io/sammy/ubuntu-nodejs]
 e3fbbfb44187: Pushed
 5f70bf18a086: Pushed
@@ -543,7 +543,7 @@ After pushing an image to a registry, it should be listed on your account’s da
 
 If a push attempt results in an error of this sort, then you likely did not log in:
 
-``` sh "Output"
+``` sh title="Output"
 The push refers to a repository [docker.io/sammy/ubuntu-nodejs]
 e3fbbfb44187: Preparing
 5f70bf18a086: Preparing
