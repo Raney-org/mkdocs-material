@@ -503,37 +503,39 @@ docker login -u docker-registry-username
 You’ll be prompted to authenticate using your Docker Hub password. If you specified the correct password, authentication should succeed.
 
 ???+ note
-    If your Docker registry username is different from the local username you used to create the image, you will have to tag your image with your registry username. For the example given in the last step, you would type:
-    
-    ```sh
+    If your Docker registry username is different from the local username you used to create the image, you will have to tag your image with your registry username.
+
+For the example given in the last step, you would type:
+
+```sh
     docker tag sammy/ubuntu-nodejs docker-registry-username/ubuntu-nodejs
-    ```
-    
-    Then you may push your own image using:
-    
-    ``` sh
-    docker push docker-registry-username/docker-image-name
-    ```
-    
-    To push the ubuntu-nodejs image to the sammy repository, the command would be:
-    
-    ``` sh
-    docker push sammy/ubuntu-nodejs
-    ```
-    
-    The process may take some time to complete as it uploads the images, but when completed, the output will look like this:
-    
-    ``` sh "Output"
-    The push refers to a repository [docker.io/sammy/ubuntu-nodejs]
-    e3fbbfb44187: Pushed
-    5f70bf18a086: Pushed
-    a3b5c80a4eba: Pushed
-    7f18b442972b: Pushed
-    3ce512daaf78: Pushed
-    7aae4540b42d: Pushed
-    
-    ...
-    ```
+```
+
+Then you may push your own image using:
+
+``` sh
+docker push docker-registry-username/docker-image-name
+```
+
+To push the ubuntu-nodejs image to the sammy repository, the command would be:
+
+``` sh
+docker push sammy/ubuntu-nodejs
+```
+
+The process may take some time to complete as it uploads the images, but when completed, the output will look like this:
+
+``` sh "Output"
+The push refers to a repository [docker.io/sammy/ubuntu-nodejs]
+e3fbbfb44187: Pushed
+5f70bf18a086: Pushed
+a3b5c80a4eba: Pushed
+7f18b442972b: Pushed
+3ce512daaf78: Pushed
+7aae4540b42d: Pushed
+
+...
+```
 
 After pushing an image to a registry, it should be listed on your account’s dashboard, like that show in the image below.
 
