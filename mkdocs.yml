@@ -188,6 +188,7 @@ extra:
     PYTHON: python
     SCHOOL: school
     RADARR: radarr
+    SALTBOX: saltbox
   social:
   - icon: fontawesome/solid/heart
     class: md-social__link heart
@@ -267,6 +268,7 @@ nav:
       - Data Tables: code/datatables.md
       - Chat GPT: code/chat-gpt.md
       - Docker: code/docker.md
+      - Saltbox: references/saltbox.md
   - Git:
 #    - git/README.MD
       - Git Info: git/git-info.md
