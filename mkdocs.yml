@@ -268,5 +268,5 @@ nav:
       - Chat GPT: code/chat-gpt.md
       - Docker: code/docker.md
   - Git:
-    - git/README.MD
-    - Git Info: git/git-info.md
+#    - git/README.MD
+      - Git Info: git/git-info.md
