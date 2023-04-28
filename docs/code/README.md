@@ -11,7 +11,7 @@ Hell yeah dog. NGL.
 
 ## Random Notes
 
-links to Home depot stuff I need.
+### links to Home depot stuff I need
 
 [Garage Door Seal](https://www.homedepot.com/p/M-D-Building-Products-0-25-in-x-2-75-in-x-9-ft-V1046-White-Dual-Vinyl-Garage-Door-Seal-Top-and-Sides-Weatherstrip-87700/205021160)
 
