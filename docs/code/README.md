@@ -32,3 +32,35 @@ To calculate the total number of pieces of polyiso foam you'll need, multiply th
 - Two pieces that are 1.5 inches by 52.5 inches per panel x 8 panels per door x 2 doors = 32 pieces
 
 Therefore, you'll need a total of 96 pieces of polyiso foam for both garage doors.
+
+## garage door outdoor measurements
+
+For the exterior trim/moulding, the following measurements.
+
+W 106.5
+H 83
+
+## Garage door indoor/panel measurements
+
+W 52.5
+H 21 ish?
+
+## garage door bottom/actual width
+
+W 108.5
+
+## misc
+
+Panels:
+
+8 per door at 52.5x21
+
+## game room door/windows
+
+W 46-46.5
+H 80-80.5
+
+### glass for right window
+
+H 73.5
+W 43.75
