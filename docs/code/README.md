@@ -93,4 +93,14 @@ Sure, I can help you figure out how many sheets of polyiso foam you'll need for 
     128.48 square feet / 32 square feet per sheet = 4.015 sheets
     ```
 
-5. Round up to the nearest whole sheet to account for any waste or errors:
+5. Round up to the nearest whole sheet to account for any waste or errors
+
+Hence, 5 pieces of foam.
+
+## Cut list to make the most efficient use of the polyiso foam sheets
+
+1. For the two pieces that are 52.5 inches by 22 inches, cut each sheet of polyiso foam into four pieces that are 2 feet by 4 feet. Then, cut each of these 2 feet by 4 feet pieces into two pieces that are 52.5 inches by 22 inches. This will give you a total of 16 pieces that are 52.5 inches by 22 inches.
+2. For the two pieces that are 1.5 inches by 22 inches, cut each sheet of polyiso foam into strips that are 1.5 inches wide and 8 feet long. Then, cut each strip into pieces that are 22 inches long. You'll get 64 pieces that are 1.5 inches by 22 inches.
+3. For the two pieces that are 1.5 inches by 52.5 inches, cut each sheet of polyiso foam into strips that are 1.5 inches wide and 4 feet long. Then, cut each strip into pieces that are 52.5 inches long. You'll get 32 pieces that are 1.5 inches by 52.5 inches.
+
+So, to shorten that up, 
