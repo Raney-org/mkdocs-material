@@ -17,7 +17,9 @@ links to Home depot stuff I need.
 
 [T Square](https://www.homedepot.com/p/Empire-48-in-Drywall-T-Square-410-48/202035306)
 
-[Polyiso Foam]()
+[Foil HVAC Tape](https://www.homedepot.com/p/Nashua-Tape-1-89-in-x-50-yd-322-Multi-Purpose-HVAC-Foil-Sealer-Duct-Tape-1906075/100030120#overlay)
+
+[Polyiso Foam](https://www.homedepot.com/p/RMAX-Pro-Select-R-Matte-Plus-3-0-5-in-x-48-in-x-8-ft-R-3-2-ISO-Rigid-Foam-Board-Insulation-637902/313501506#overlay)
 
 ## Polyiso pieces cut list
 
@@ -182,3 +184,5 @@ it will need tape along each edge to keep the heat out
     2,393 inches
     200 feet
     67 yards
+
+each roll of tape do be 50 yards. Gotta get 2 rolls of that shit.
