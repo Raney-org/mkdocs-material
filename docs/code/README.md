@@ -13,11 +13,9 @@ Hell yeah dog. NGL.
 
 links to Home depot stuff I need.
 
-<https://www.homedepot.com/p/M-D-Building-Products-0-25-in-x-2-75-in-x-9-ft-V1046-White-Dual-Vinyl-Garage-Door-Seal-Top-and-Sides-Weatherstrip-87700/205021160>
+[Garage Door Seal](https://www.homedepot.com/p/M-D-Building-Products-0-25-in-x-2-75-in-x-9-ft-V1046-White-Dual-Vinyl-Garage-Door-Seal-Top-and-Sides-Weatherstrip-87700/205021160)
 
 [T Square](https://www.homedepot.com/p/Empire-48-in-Drywall-T-Square-410-48/202035306)
-
-<>
 
 ## Polyiso pieces cut list
 
