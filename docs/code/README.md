@@ -152,3 +152,17 @@ To calculate the number of pieces of weatherstripping trim you'll need, follow t
     8.15 pieces rounded up to 9 pieces
 
 Therefore, you'll need 9 pieces of weatherstripping trim to complete your project.
+
+## what I need to do
+
+I need to buy several rolls of HVAC Foil tape. I need to figure out how many rolls of tape I'll need for the garage door.
+
+each door has 8 panels.
+
+16 panels.
+
+each panel is approx 53 inches by 23 inches. (actual is 52.5 and 22 (ish))
+
+it will need tape along each edge to keep the heat out
+
+52 inches x 2 (per panel) x 8 (per door) = 32 pieces of tape at 52.5 inches
