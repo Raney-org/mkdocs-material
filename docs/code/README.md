@@ -64,3 +64,33 @@ H 80-80.5
 
 H 73.5
 W 43.75
+
+## Calculate the total amount of shit I need
+
+Sure, I can help you figure out how many sheets of polyiso foam you'll need for your project. Here are the steps:
+
+1. Calculate the total area of each garage door panel. Each panel is 52.5 inches wide and 22 inches tall, so the total area of each panel is:
+
+    ```ruby title="Total Area: Garage Panel"
+    52.5 inches x 22 inches = 1155 square inches
+    ```
+
+2. Convert the area of each panel to square feet. There are 144 square inches in a square foot, so the area of each panel in square feet is:
+
+    ```ruby title="SQ ft per Panel"
+    1155 square inches / 144 = 8.03 square feet
+    ```
+
+3. Calculate the total area of all the panels on both garage doors. Each garage door has 8 panels, so the total area of all the panels on both doors is:
+
+    ```ruby title="Total Area: All Panels"
+    8 panels x 2 doors x 8.03 square feet per panel = 128.48 square feet
+    ```
+
+4. Calculate the number of polyiso foam sheets you'll need. Each polyiso foam sheet is 4 feet wide and 8 feet tall, which is 32 square feet. Divide the total area of all the garage door panels by the area of each polyiso foam sheet to get the number of sheets needed:
+
+    ```ruby title="Total Sheets Needed"
+    128.48 square feet / 32 square feet per sheet = 4.015 sheets
+    ```
+
+5. Round up to the nearest whole sheet to account for any waste or errors:
