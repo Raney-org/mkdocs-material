@@ -26,7 +26,7 @@ So this link to a [Homeassistant] tutorial is going to be super helpful I think.
 
 ```yaml
 ##########################################################################
-# Title:         Sandbox: Influxdb_web | Default Variables               #
+# Title:         Sandbox: influxdb2 | Default Variables               #
 # Author(s):     CHAIR/Raneydazed14                                      #
 # URL:           https://github.com/saltyorg/Sandbox                     #
 # --                                                                     #
@@ -38,64 +38,64 @@ So this link to a [Homeassistant] tutorial is going to be super helpful I think.
 # Basics
 ################################
 
-influxdb_web_name: influxdb_web
+influxdb2_name: influxdb2
 
 ################################
 # Paths
 ################################
 
-influxdb_web_paths_folder: "{{ influxdb_web_name }}"
-influxdb_web_paths_location: "{{ server_appdata_path }}/{{ influxdb_web_paths_folder }}"
-influxdb_web_paths_folders_list:
-  - "{{ influxdb_web_paths_location }}"
+influxdb2_paths_folder: "{{ influxdb2_name }}"
+influxdb2_paths_location: "{{ server_appdata_path }}/{{ influxdb2_paths_folder }}"
+influxdb2_paths_folders_list:
+  - "{{ influxdb2_paths_location }}"
 
 ################################
 # Web
 ################################
 
-influxdb_web_web_subdomain: "{{ influxdb_web_name }}"
-influxdb_web_web_domain: "{{ user.domain }}"
-influxdb_web_web_port: "8086"
-influxdb_web_web_url: "{{ 'https://' + influxdb_web_web_subdomain + '.' + influxdb_web_web_domain }}"
+influxdb2_web_subdomain: "{{ influxdb2_name }}"
+influxdb2_web_domain: "{{ user.domain }}"
+influxdb2_web_port: "8086"
+influxdb2_web_url: "{{ 'https://' + influxdb2_web_subdomain + '.' + influxdb2_web_domain }}"
 
 ################################
 # DNS
 ################################
 
-influxdb_web_dns_record: "{{ influxdb_web_web_subdomain }}"
-influxdb_web_dns_zone: "{{ influxdb_web_web_domain }}"
-influxdb_web_dns_proxy: false
+influxdb2_dns_record: "{{ influxdb2_web_subdomain }}"
+influxdb2_dns_zone: "{{ influxdb2_web_domain }}"
+influxdb2_dns_proxy: "{{ dns.proxied }}"
 
 ################################
 # Traefik
 ################################
 
-influxdb_web_traefik_middleware: "{{ traefik_default_middleware }}"
-influxdb_web_traefik_certresolver: "{{ traefik_default_certresolver }}"
-influxdb_web_traefik_enabled: true
-influxdb_web_traefik_api_enabled: true
-influxdb_web_traefik_api_endpoint: "`/api`,`/feed`,`/ping`"
+influxdb2_traefik_middleware: "{{ traefik_default_middleware }}"
+influxdb2_traefik_certresolver: "{{ traefik_default_certresolver }}"
+influxdb2_traefik_enabled: true
+influxdb2_traefik_api_enabled: true
+influxdb2_traefik_api_endpoint: "`/api`,`/feed`,`/ping`"
 
 ################################
 # Docker
 ################################
 
 # Container
-influxdb_web_docker_container: "{{ influxdb_web_name }}"
+influxdb2_docker_container: "{{ influxdb2_name }}"
 
 # Image
-influxdb_web_docker_image_pull: true
-influxdb_web_docker_image_tag: "2.7"
-influxdb_web_docker_image: "influxdb:{{ influxdb_web_docker_image_tag }}"
+influxdb2_docker_image_pull: true
+influxdb2_docker_image_tag: "2.7"
+influxdb2_docker_image: "influxdb:{{ influxdb2_docker_image_tag }}"
 
 # Ports
-influxdb_web_docker_ports_defaults: []
-influxdb_web_docker_ports_custom: []
-influxdb_web_docker_ports: "{{ influxdb_web_docker_ports_defaults
-                               + influxdb_web_docker_ports_custom }}"
+influxdb2_docker_ports_defaults: []
+influxdb2_docker_ports_custom: []
+influxdb2_docker_ports: "{{ influxdb2_docker_ports_defaults
+                            + influxdb2_docker_ports_custom }}"
 
 # Envs
-influxdb_web_docker_envs_default:
+influxdb2_docker_envs_default:
   PUID: "{{ uid }}"
   PGID: "{{ gid }}"
   TZ: "{{ tz }}"
@@ -105,71 +105,71 @@ influxdb_web_docker_envs_default:
   INFLUXDB_USER: "homeassistant"
   INFLUXDB_USER_PASSWORD: "homeassistant"
 
-influxdb_web_docker_envs_custom: {}
-influxdb_web_docker_envs: "{{ influxdb_web_docker_envs_default
-                              | combine(influxdb_web_docker_envs_custom) }}"
+influxdb2_docker_envs_custom: {}
+influxdb2_docker_envs: "{{ influxdb2_docker_envs_default
+                           | combine(influxdb2_docker_envs_custom) }}"
 
 # Commands
-influxdb_web_docker_commands_default: []
-influxdb_web_docker_commands_custom: []
-influxdb_web_docker_commands: "{{ influxdb_web_docker_commands_default
-                                  + influxdb_web_docker_commands_custom }}"
+influxdb2_docker_commands_default: []
+influxdb2_docker_commands_custom: []
+influxdb2_docker_commands: "{{ influxdb2_docker_commands_default
+                               + influxdb2_docker_commands_custom }}"
 
 # Volumes
-influxdb_web_docker_volumes_default:
-  - "{{ influxdb_web_paths_location }}:/var/lib/influxdb2"
-influxdb_web_docker_volumes_custom: []
-influxdb_web_docker_volumes: "{{ influxdb_web_docker_volumes_default
-                                 + influxdb_web_docker_volumes_custom }}"
+influxdb2_docker_volumes_default:
+  - "{{ influxdb2_paths_location }}:/var/lib/influxdb2"
+influxdb2_docker_volumes_custom: []
+influxdb2_docker_volumes: "{{ influxdb2_docker_volumes_default
+                              + influxdb2_docker_volumes_custom }}"
 
 # Devices
-influxdb_web_docker_devices_default: []
-influxdb_web_docker_devices_custom: []
-influxdb_web_docker_devices: "{{ influxdb_web_docker_devices_default
-                                 + influxdb_web_docker_devices_custom }}"
+influxdb2_docker_devices_default: []
+influxdb2_docker_devices_custom: []
+influxdb2_docker_devices: "{{ influxdb2_docker_devices_default
+                              + influxdb2_docker_devices_custom }}"
 
 # Hosts
-influxdb_web_docker_hosts_default: []
-influxdb_web_docker_hosts_custom: []
-influxdb_web_docker_hosts: "{{ docker_hosts_common
-                               | combine(influxdb_web_docker_hosts_default)
-                               | combine(influxdb_web_docker_hosts_custom) }}"
+influxdb2_docker_hosts_default: []
+influxdb2_docker_hosts_custom: []
+influxdb2_docker_hosts: "{{ docker_hosts_common
+                            | combine(influxdb2_docker_hosts_default)
+                            | combine(influxdb2_docker_hosts_custom) }}"
 
 # Labels
-influxdb_web_docker_labels_default: {}
-influxdb_web_docker_labels_custom: {}
-influxdb_web_docker_labels: "{{ docker_labels_common
-                                | combine(influxdb_web_docker_labels_default)
-                                | combine(influxdb_web_docker_labels_custom) }}"
+influxdb2_docker_labels_default: {}
+influxdb2_docker_labels_custom: {}
+influxdb2_docker_labels: "{{ docker_labels_common
+                             | combine(influxdb2_docker_labels_default)
+                             | combine(influxdb2_docker_labels_custom) }}"
 
 # Hostname
-influxdb_web_docker_hostname: "{{ influxdb_web_name }}"
+influxdb2_docker_hostname: "{{ influxdb2_name }}"
 
 # Networks
-influxdb_web_docker_networks_alias: "{{ influxdb_web_name }}"
-influxdb_web_docker_networks_default: []
-influxdb_web_docker_networks_custom: []
-influxdb_web_docker_networks: "{{ docker_networks_common
-                                  + influxdb_web_docker_networks_default
-                                  + influxdb_web_docker_networks_custom }}"
+influxdb2_docker_networks_alias: "{{ influxdb2_name }}"
+influxdb2_docker_networks_default: []
+influxdb2_docker_networks_custom: []
+influxdb2_docker_networks: "{{ docker_networks_common
+                               + influxdb2_docker_networks_default
+                               + influxdb2_docker_networks_custom }}"
 
 # Capabilities
-influxdb_web_docker_capabilities_default: []
-influxdb_web_docker_capabilities_custom: []
-influxdb_web_docker_capabilities: "{{ influxdb_web_docker_capabilities_default
-                                      + influxdb_web_docker_capabilities_custom }}"
+influxdb2_docker_capabilities_default: []
+influxdb2_docker_capabilities_custom: []
+influxdb2_docker_capabilities: "{{ influxdb2_docker_capabilities_default
+                                   + influxdb2_docker_capabilities_custom }}"
 
 # Security Opts
-influxdb_web_docker_security_opts_default: []
-influxdb_web_docker_security_opts_custom: []
-influxdb_web_docker_security_opts: "{{ influxdb_web_docker_security_opts_default
-                                       + influxdb_web_docker_security_opts_custom }}"
+influxdb2_docker_security_opts_default: []
+influxdb2_docker_security_opts_custom: []
+influxdb2_docker_security_opts: "{{ influxdb2_docker_security_opts_default
+                                    + influxdb2_docker_security_opts_custom }}"
 
 # Restart Policy
-influxdb_web_docker_restart_policy: unless-stopped
+influxdb2_docker_restart_policy: unless-stopped
 
 # State
-influxdb_web_docker_state: started
+influxdb2_docker_state: started
 ```
 
 ```yaml
