@@ -165,4 +165,20 @@ each panel is approx 53 inches by 23 inches. (actual is 52.5 and 22 (ish))
 
 it will need tape along each edge to keep the heat out
 
-52 inches x 2 (per panel) x 8 (per door) = 32 pieces of tape at 52.5 inches
+1. 52 inches x 2 (per panel) x 8 (per door) = 32 pieces of tape at 52.5 inches
+
+    1,689 inches
+    140 feet
+    47 yards
+
+2. 22 inches x 2 (per panel) x 8 (per door) = 32 pieces of tape at 22 inches
+
+    704 inches
+    59 feet
+    20 yards
+
+3. Total the amount of tape between both variables
+
+    2,393 inches
+    200 feet
+    67 yards
