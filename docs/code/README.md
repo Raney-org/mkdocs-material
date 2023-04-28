@@ -118,3 +118,37 @@ pieces:
   1.5 inches by 52.5 inches
     32 pieces
 ```
+
+## Weatherstripping for garage door
+
+To calculate the number of pieces of weatherstripping trim you'll need, follow these steps:
+
+1. Calculate the total length of the two spaces that are 83 inches tall on each door. Each door has two of these spaces, so the total length is:
+
+    2 spaces x 83 inches per space x 2 doors = 332 inches
+
+2. Convert the total length of the two 83-inch spaces to feet by dividing by 12:
+
+    332 inches / 12 inches per foot = 27.67 feet
+
+3. Calculate the length of the one space that is 108 inches long on each door. Each door has one of these spaces, so the total length is:
+
+    1 space x 108 inches per space x 2 doors = 216 inches
+
+4. Convert the total length of the one 108-inch space to feet by dividing by 12:
+
+    216 inches / 12 inches per foot = 18 feet
+
+5. Add the total length of the two 83-inch spaces and the one 108-inch space to get the total length of weatherstripping trim needed:
+
+    27.67 feet + 27.67 feet + 18 feet = 73.34 feet
+
+6. Divide the total length of weatherstripping trim needed by the length of each piece of trim to get the number of pieces needed:
+
+    73.34 feet / 9 feet per piece = 8.15 pieces
+
+    Round up to the nearest whole piece to account for any waste or errors:
+
+    8.15 pieces rounded up to 9 pieces
+
+Therefore, you'll need 9 pieces of weatherstripping trim to complete your project.
