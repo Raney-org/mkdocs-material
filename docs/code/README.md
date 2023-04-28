@@ -19,11 +19,13 @@ links to Home depot stuff I need.
 
 ## Polyiso pieces cut list
 
+### Per panel, I need the following
+
 - Two pieces that are 52.5 inches by 22 inches
 - Two pieces that are 1.5 inches by 22 inches
 - Two pieces that are 1.5 inches by 52.5 inches
 
-To calculate the total number of pieces of polyiso foam you'll need, multiply the number of pieces needed for each panel by the total number of panels on both garage doors:
+### To calculate the total number of pieces of polyiso foam you'll need, multiply the number of pieces needed for each panel by the total number of panels on both garage doors
 
 - Two pieces that are 52.5 inches by 22 inches per panel x 8 panels per door x 2 doors = 32 pieces
 - Two pieces that are 1.5 inches by 22 inches per panel x 8 panels per door x 2 doors = 32 pieces
@@ -101,4 +103,14 @@ Hence, 5 pieces of foam.
 2. For the two pieces that are 1.5 inches by 22 inches, cut each sheet of polyiso foam into strips that are 1.5 inches wide and 8 feet long. Then, cut each strip into pieces that are 22 inches long. You'll get 64 pieces that are 1.5 inches by 22 inches.
 3. For the two pieces that are 1.5 inches by 52.5 inches, cut each sheet of polyiso foam into strips that are 1.5 inches wide and 4 feet long. Then, cut each strip into pieces that are 52.5 inches long. You'll get 32 pieces that are 1.5 inches by 52.5 inches.
 
-So, to shorten that up, 
+So, to shorten that up, here is a truncated cut list:
+
+```cs title="Cut List"
+pieces:
+  52.5 inches by 22 inches
+    32 pieces
+  1.5 inches by 22 inches
+    32 pieces
+  1.5 inches by 52.5 inches
+    32 pieces
+```
