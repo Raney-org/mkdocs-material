@@ -36,3 +36,22 @@ In this argument, we focus on the potential downsides of social media use and it
 ## Thesis
 
 The impact of social media on relationships is multifaceted, and while it offers opportunities for enhanced communication and connection, it also presents significant challenges that can potentially harm interpersonal relationships.
+
+
+## References
+
+Bayer, J. B., Ellison, N. B., Schoenebeck, S. Y., & Falk, E. B. (2016). Sharing the small moments: Ephemeral social interaction on Snapchat. Information, Communication & Society, 19(7), 956-977.
+
+Chou, H. T. G., & Edge, N. (2012). “They are happier and having better lives than I am”: The impact of using Facebook on perceptions of others' lives. Cyberpsychology, Behavior, and Social Networking, 15(2), 117-121.
+
+Ellison, N. B., Steinfield, C., & Lampe, C. (2007). The benefits of Facebook “friends:” Social capital and college students’ use of online social network sites. Journal of Computer-Mediated Communication, 12(4), 1143-1168.
+
+Kowalski, R. M., Giumetti, G. W., Schroeder, A. N., & Lattanner, M. R. (2014). Bullying in the digital age: A critical review and meta-analysis of cyberbullying research among youth. Psychological Bulletin, 140(4), 1073-1137.
+
+Kuss, D. J., & Griffiths, M. D. (2017). Social networking sites and addiction: Ten lessons learned. International Journal of Environmental Research and Public Health, 14(3), 311.
+
+Nabi, R. L., Prestin, A., & So, J. (2013). Facebook friends with (health) benefits? Exploring social network site use and perceptions of social support, stress, and well-being. Cyberpsychology, Behavior, and Social Networking, 16(10), 721-727.
+
+Turkle, S. (2015). Reclaiming conversation: The power of talk in a digital age. Penguin.
+
+Vitak, J. (2014). Unpacking social media’s role in resource provision: Functions of social media in the lives of emerging adults. In Z. Papacharissi (Ed.), A networked self: Identity, community, and culture on social network sites (pp. 93-113). Routledge.
