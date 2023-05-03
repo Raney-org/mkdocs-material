@@ -43,7 +43,16 @@ The second argument contends that social media harms relationships by encouragin
 
 Both arguments present valid points, but neither captures the full complexity of social media's impact on relationships. It is important to recognize that social media can have both positive and negative effects on relationships, depending on the specific context and usage patterns. A more nuanced analysis might consider the balance between these positive and negative aspects, as well as individual and situational factors that may influence the overall impact of social media on relationships. In conclusion, while both arguments have merits, a more comprehensive understanding of the issue requires considering the interplay between the beneficial and detrimental aspects of social media use.
 
+## My Argument
 
+My Argument: Social media's impact on relationships depends on individual usage patterns and context.
+
+Premise 1: Social media can enhance communication and connection when used responsibly (Bayer et al., 2016; Ellison et al., 2007).
+Premise 2: Social media can harm relationships when used excessively or inappropriately (Turkle, 2015; Kuss & Griffiths, 2017).
+Premise 3: Individual factors, such as personality, communication style, and social media usage patterns, influence the impact of social media on relationships (Vitak, 2014).
+Premise 4: Contextual factors, including the specific platform and purpose of use, also contribute to the impact of social media on relationships (Nabi et al., 2013).
+
+Conclusion: The impact of social media on relationships is not universally positive or negative, but rather depends on individual usage patterns and context.
 
 ## Thesis
 
