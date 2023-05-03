@@ -73,11 +73,11 @@ In conclusion, while the addictive design of social media platforms presents a c
 
 ## Conclusion
 
+In conclusion, the impact of social media on relationships is a complex and multifaceted issue that requires careful consideration of both positive and negative aspects. The evidence presented in this analysis demonstrates that social media can improve relationships by enhancing communication and connection, while also posing potential risks such as fostering superficial interactions, addictive behaviors, and negative experiences.
 
+As critical thinkers, it is essential to approach controversial topics like this by examining the best arguments and evidence from all points of view. By doing so, we can develop a nuanced understanding of the issue and avoid oversimplifying or falling prey to biases. In the case of social media and relationships, it is crucial to acknowledge that individual usage patterns and context play a significant role in determining the overall impact. By engaging responsibly and mindfully, users can mitigate potential negative effects and harness the positive aspects of social media to foster meaningful connections.
 
-## Thesis
-
-The impact of social media on relationships is multifaceted, and while it offers opportunities for enhanced communication and connection, it also presents significant challenges that can potentially harm interpersonal relationships.
+Ultimately, critical thinkers should strive to maintain an open-minded and balanced perspective when addressing controversial topics, carefully weighing the evidence and considering the broader context to arrive at well-reasoned conclusions.
 
 ## References
 
@@ -100,3 +100,7 @@ Turkle, S. (2015). Reclaiming conversation: The power of talk in a digital age. 
 Vanman, E. J., Baker, R., & Tobin, S. J. (2018). The burden of online friends: The effects of giving up Facebook on stress and well-being. The Journal of Social Psychology, 158(4), 496-508.
 
 Vitak, J. (2014). Unpacking social media’s role in resource provision: Functions of social media in the lives of emerging adults. In Z. Papacharissi (Ed.), A networked self: Identity, community, and culture on social network sites (pp. 93-113). Routledge.
+
+## Thesis
+
+The impact of social media on relationships is multifaceted, and while it offers opportunities for enhanced communication and connection, it also presents significant challenges that can potentially harm interpersonal relationships.
