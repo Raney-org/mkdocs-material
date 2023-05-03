@@ -54,6 +54,23 @@ Premise 4: Contextual factors, including the specific platform and purpose of us
 
 Conclusion: The impact of social media on relationships is not universally positive or negative, but rather depends on individual usage patterns and context.
 
+## Addressing and Objection to my argument
+
+Objection: Social media platforms are designed to be addictive, making it difficult for users to engage responsibly and avoid the negative impacts on relationships.
+
+Premise 1: Social media platforms employ persuasive design techniques to keep users engaged and spending more time on their platforms (Fogg, 2002).
+Premise 2: The addictive nature of social media can lead to excessive use, which is more likely to result in negative outcomes for relationships (Kuss & Griffiths, 2017).
+
+Conclusion: The addictive design of social media platforms makes it challenging for users to engage responsibly, leading to a higher likelihood of negative impacts on relationships.
+
+Response to Objection and Defense of My Argument:
+
+While it is true that social media platforms are designed to be engaging and can lead to addictive behaviors (Fogg, 2002), it is still possible for users to engage responsibly by being aware of their usage patterns and setting boundaries. In fact, research has shown that users who are mindful of their social media use and set limits are less likely to experience negative outcomes (Vanman, Baker, & Tobin, 2018).
+
+Furthermore, it is essential to recognize that the impacts of social media on relationships are not solely determined by the design of the platforms but also by the individual choices and behaviors of users. By focusing on the quality of interactions, fostering genuine connections, and using social media as a supplement to face-to-face communication, users can mitigate the potential negative effects on their relationships (Vitak, 2014).
+
+In conclusion, while the addictive design of social media platforms presents a challenge, it does not negate the fact that the impact of social media on relationships depends on individual usage patterns and context. By engaging responsibly and being mindful of their behavior, users can still experience the positive aspects of social media in their relationships.
+
 ## Thesis
 
 The impact of social media on relationships is multifaceted, and while it offers opportunities for enhanced communication and connection, it also presents significant challenges that can potentially harm interpersonal relationships.
