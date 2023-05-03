@@ -47,7 +47,6 @@ Both arguments present valid points, but neither captures the full complexity of
 
 The impact of social media on relationships is multifaceted, and while it offers opportunities for enhanced communication and connection, it also presents significant challenges that can potentially harm interpersonal relationships.
 
-
 ## References
 
 Bayer, J. B., Ellison, N. B., Schoenebeck, S. Y., & Falk, E. B. (2016). Sharing the small moments: Ephemeral social interaction on Snapchat. Information, Communication & Society, 19(7), 956-977.
