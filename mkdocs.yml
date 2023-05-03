@@ -257,12 +257,15 @@ nav:
   - Tags: tags.md
   - Docker:
     - code/README.md
-    - Wiki JS: code/wiki-js.md
     - Audiobookshelf: code/audiobookshelf.md
     - Pihole + Unbound: code/pihole.md
-    - YTDL: code/ytdl.md
+    - qBittorrent:
+        - Tune: code/qbit/tune.md
+        - qBit Info: code/qbit/qbit.md
     - Starr Suite:
         - Radarr: code/radarr.md
+    - Wiki JS: code/wiki-js.md
+    - YTDL: code/ytdl.md
   - Tests:
       - Mermaid: code/mermaid-test.md
       - Data Tables: code/datatables.md

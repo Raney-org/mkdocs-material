@@ -9,8 +9,122 @@ tags:
 
 So I've been bothering old Chat-GPT with millions of questions lately. Its pretty great. I'll try to keep this legible, but no guarantees. I was all over the place with my questions. I'll probably refactor this a hundred times before I'm satisfied with it, but here we go!
 
-## Some Questions for You Mr. GPT
+## how do you authenticate an ssh key with github
 
+To authenticate an `SSH` key with `GitHub`, follow these steps:
+
+1. Check for existing SSH keys:
+    First, check if you already have an SSH key pair. Open a terminal (or Git Bash on Windows) and run the following command:
+
+    ``` sh
+    ls -al ~/.ssh
+    ```
+
+    Look for a pair of files named `id_rsa` (private key) and `id_rsa.pub` (public key). If you don't have these files, proceed to step 2.
+
+2. Generate a new `SSH` key pair:
+    Run the following command, replacing `"youremail@example.com"` with your GitHub email address:
+
+    ``` sh
+    ssh-keygen -t rsa -b 4096 -C "youremail@example.com"
+    ```
+
+    Press `Enter` to accept the default file location. You can set a passphrase for added security, but it's optional.
+
+3. Add the `SSH` key to the `ssh-agent`:
+    Start the ssh-agent in the background:
+
+      - On `macOS` and `Linux`:
+
+    ``` sh
+    eval "$(ssh-agent -s)"
+    ```
+
+      - On `Windows` (Git Bash):
+
+    ``` sh
+    eval $(ssh-agent -s)
+    ```
+
+    Add the private `SSH` key to the `ssh-agent`:
+
+    ``` sh
+    ssh-add ~/.ssh/id_rsa
+    ```
+
+4. Add the public SSH key to your GitHub account:
+    Copy the contents of the public key file. You can use the following command to output the contents and copy them to your clipboard:
+
+      - On `macOS`:
+
+    ``` sh
+    pbcopy < ~/.ssh/id_rsa.pub
+    ```
+
+      - On `Linux` (with xclip installed):
+
+    ``` sh
+    xclip -sel clip < ~/.ssh/id_rsa.pub
+    ```
+
+     - On `Windows` (Git Bash):
+
+    ``` sh
+    clip < ~/.ssh/id_rsa.pub
+    ```
+
+    Now, go to GitHub and follow these steps:
+
+     - Click on your profile picture in the upper-right corner and select `"Settings."`
+     - In the left sidebar, click on `"SSH and GPG keys."`
+     - Click the `"New SSH key"` button.
+     - Enter a title for the key (e.g., `"My Laptop"`).
+     - Paste the copied public key into the `"Key"` field.
+     - Click the `"Add SSH key"` button.
+
+5. Test the SSH connection:
+Run the following command to test the SSH connection to GitHub:
+
+``` sh
+ssh -T git@github.com
+```
+
+You should see a message like `"Hi username! You've successfully authenticated..."`. If you encounter any issues, refer to the [GitHub SSH troubleshooting guide](https://docs.github.com/en/authentication/troubleshooting-ssh)
+
+
+## how do you change a local GitHub repo from using ssh to httpsid
+
+
+To change a local GitHub repository from using SSH to HTTPS, follow these steps:
+
+1. Open a terminal (or Git Bash on Windows) and navigate to your local repository using the cd command:
+
+cd path/to/your/repo
+
+
+2. Check the current remote URL by running:
+
+git remote -v
+
+
+This will display the remote URLs for fetching and pushing, which are currently using the SSH protocol (e.g., git@github.com:username/repo.git).
+
+3. Change the remote URL from SSH to HTTPS:
+
+Find the HTTPS URL of your repository on GitHub by going to your repository page, clicking the green "Code" button, and selecting the "HTTPS" option. The URL will look like this: https://github.com/username/repo.git.
+
+Now, update the remote URL in your local repository by running:
+
+git remote set-url origin https://github.com/username/repo.git
+
+
+Replace https://github.com/username/repo.git with the actual HTTPS URL you found on GitHub.
+
+4. Verify the change:
+
+Run git remote -v again to check if the remote URLs for fetching and pushing have been updated to the HTTPS protocol.
+
+Now, your local GitHub repository is using HTTPS instead of SSH for communication. Keep in mind that you might be prompted to enter your GitHub username and password or personal access token when you push or pull changes.
 ### How do I set up vs code to commmit everything as a bot? and if I wanted to commit it as a bot with a gpg key, how would I do that?
 
 To commit changes in VS Code as a bot, you need to configure Git with the bot's name and email address. Additionally, if you want to sign commits with a GPG key, you need to set up GPG for the bot and configure Git to use it.
