@@ -91,6 +91,40 @@ ssh -T git@github.com
 
 You should see a message like `"Hi username! You've successfully authenticated..."`. If you encounter any issues, refer to the [GitHub SSH troubleshooting guide](https://docs.github.com/en/authentication/troubleshooting-ssh)
 
+
+## how do you change a local GitHub repo from using ssh to httpsid
+
+
+To change a local GitHub repository from using SSH to HTTPS, follow these steps:
+
+1. Open a terminal (or Git Bash on Windows) and navigate to your local repository using the cd command:
+
+cd path/to/your/repo
+
+
+2. Check the current remote URL by running:
+
+git remote -v
+
+
+This will display the remote URLs for fetching and pushing, which are currently using the SSH protocol (e.g., git@github.com:username/repo.git).
+
+3. Change the remote URL from SSH to HTTPS:
+
+Find the HTTPS URL of your repository on GitHub by going to your repository page, clicking the green "Code" button, and selecting the "HTTPS" option. The URL will look like this: https://github.com/username/repo.git.
+
+Now, update the remote URL in your local repository by running:
+
+git remote set-url origin https://github.com/username/repo.git
+
+
+Replace https://github.com/username/repo.git with the actual HTTPS URL you found on GitHub.
+
+4. Verify the change:
+
+Run git remote -v again to check if the remote URLs for fetching and pushing have been updated to the HTTPS protocol.
+
+Now, your local GitHub repository is using HTTPS instead of SSH for communication. Keep in mind that you might be prompted to enter your GitHub username and password or personal access token when you push or pull changes.
 ### How do I set up vs code to commmit everything as a bot? and if I wanted to commit it as a bot with a gpg key, how would I do that?
 
 To commit changes in VS Code as a bot, you need to configure Git with the bot's name and email address. Additionally, if you want to sign commits with a GPG key, you need to set up GPG for the bot and configure Git to use it.
