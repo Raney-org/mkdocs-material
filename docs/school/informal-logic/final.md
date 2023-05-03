@@ -71,6 +71,10 @@ Furthermore, it is essential to recognize that the impacts of social media on re
 
 In conclusion, while the addictive design of social media platforms presents a challenge, it does not negate the fact that the impact of social media on relationships depends on individual usage patterns and context. By engaging responsibly and being mindful of their behavior, users can still experience the positive aspects of social media in their relationships.
 
+## Conclusion
+
+
+
 ## Thesis
 
 The impact of social media on relationships is multifaceted, and while it offers opportunities for enhanced communication and connection, it also presents significant challenges that can potentially harm interpersonal relationships.
