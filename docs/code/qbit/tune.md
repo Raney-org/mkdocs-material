@@ -6,6 +6,8 @@ tags:
 
 # qBittorrent Tuning for 4.3.9-4.5.2 on 1gbps LT 1.2
 
+Thank you to Imabee for writing this up! Hes the tuniest Canadian I know.
+
 ## Speed
 
 Unlimited on all, rate limit utp and lan
