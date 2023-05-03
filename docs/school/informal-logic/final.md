@@ -83,6 +83,8 @@ Chou, H. T. G., & Edge, N. (2012). “They are happier and having better lives t
 
 Ellison, N. B., Steinfield, C., & Lampe, C. (2007). The benefits of Facebook “friends:” Social capital and college students’ use of online social network sites. Journal of Computer-Mediated Communication, 12(4), 1143-1168.
 
+Fogg, B. J. (2002). Persuasive technology: Using computers to change what we think and do. Morgan Kaufmann.
+
 Kowalski, R. M., Giumetti, G. W., Schroeder, A. N., & Lattanner, M. R. (2014). Bullying in the digital age: A critical review and meta-analysis of cyberbullying research among youth. Psychological Bulletin, 140(4), 1073-1137.
 
 Kuss, D. J., & Griffiths, M. D. (2017). Social networking sites and addiction: Ten lessons learned. International Journal of Environmental Research and Public Health, 14(3), 311.
@@ -90,5 +92,7 @@ Kuss, D. J., & Griffiths, M. D. (2017). Social networking sites and addiction: T
 Nabi, R. L., Prestin, A., & So, J. (2013). Facebook friends with (health) benefits? Exploring social network site use and perceptions of social support, stress, and well-being. Cyberpsychology, Behavior, and Social Networking, 16(10), 721-727.
 
 Turkle, S. (2015). Reclaiming conversation: The power of talk in a digital age. Penguin.
+
+Vanman, E. J., Baker, R., & Tobin, S. J. (2018). The burden of online friends: The effects of giving up Facebook on stress and well-being. The Journal of Social Psychology, 158(4), 496-508.
 
 Vitak, J. (2014). Unpacking social media’s role in resource provision: Functions of social media in the lives of emerging adults. In Z. Papacharissi (Ed.), A networked self: Identity, community, and culture on social network sites (pp. 93-113). Routledge.
