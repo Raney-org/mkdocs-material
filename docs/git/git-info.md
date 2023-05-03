@@ -11,72 +11,85 @@ So I've been bothering old Chat-GPT with millions of questions lately. Its prett
 
 ## how do you authenticate an ssh key with github
 
-To authenticate an SSH key with GitHub, follow these steps:
+To authenticate an `SSH` key with `GitHub`, follow these steps:
 
 1. Check for existing SSH keys:
-First, check if you already have an SSH key pair. Open a terminal (or Git Bash on Windows) and run the following command:
+    First, check if you already have an SSH key pair. Open a terminal (or Git Bash on Windows) and run the following command:
 
-ls -al ~/.ssh
+    ``` sh
+    ls -al ~/.ssh
+    ```
 
-Look for a pair of files named id_rsa (private key) and id_rsa.pub (public key). If you don't have these files, proceed to step 2.
+    Look for a pair of files named `id_rsa` (private key) and `id_rsa.pub` (public key). If you don't have these files, proceed to step 2.
 
-1. Generate a new SSH key pair:
-Run the following command, replacing "youremail@example.com" with your GitHub email address:
+2. Generate a new `SSH` key pair:
+    Run the following command, replacing `"youremail@example.com"` with your GitHub email address:
 
-ssh-keygen -t rsa -b 4096 -C "youremail@example.com"
+    ``` sh
+    ssh-keygen -t rsa -b 4096 -C "youremail@example.com"
+    ```
 
-Press Enter to accept the default file location. You can set a passphrase for added security, but it's optional.
+    Press `Enter` to accept the default file location. You can set a passphrase for added security, but it's optional.
 
-1. Add the SSH key to the ssh-agent:
-Start the ssh-agent in the background:
+3. Add the `SSH` key to the `ssh-agent`:
+    Start the ssh-agent in the background:
 
-- On macOS and Linux:
+      - On `macOS` and `Linux`:
 
-  eval "$(ssh-agent -s)"
-  
+    ``` sh
+    eval "$(ssh-agent -s)"
+    ```
 
-- On Windows (Git Bash):
+      - On `Windows` (Git Bash):
 
-  eval $(ssh-agent -s)
-  
+    ``` sh
+    eval $(ssh-agent -s)
+    ```
 
-Add the private SSH key to the ssh-agent:
+    Add the private `SSH` key to the `ssh-agent`:
 
-ssh-add ~/.ssh/id_rsa
+    ``` sh
+    ssh-add ~/.ssh/id_rsa
+    ```
 
 4. Add the public SSH key to your GitHub account:
-Copy the contents of the public key file. You can use the following command to output the contents and copy them to your clipboard:
+    Copy the contents of the public key file. You can use the following command to output the contents and copy them to your clipboard:
 
-- On macOS:
+      - On `macOS`:
 
-  pbcopy < ~/.ssh/id_rsa.pub
-  
+    ``` sh
+    pbcopy < ~/.ssh/id_rsa.pub
+    ```
 
-- On Linux (with xclip installed):
+      - On `Linux` (with xclip installed):
 
-  xclip -sel clip < ~/.ssh/id_rsa.pub
-  
+    ``` sh
+    xclip -sel clip < ~/.ssh/id_rsa.pub
+    ```
 
-- On Windows (Git Bash):
+     - On `Windows` (Git Bash):
 
-  clip < ~/.ssh/id_rsa.pub
-  
+    ``` sh
+    clip < ~/.ssh/id_rsa.pub
+    ```
 
-Now, go to GitHub and follow these steps:
+    Now, go to GitHub and follow these steps:
 
-- Click on your profile picture in the upper-right corner and select "Settings."
-- In the left sidebar, click on "SSH and GPG keys."
-- Click the "New SSH key" button.
-- Enter a title for the key (e.g., "My Laptop").
-- Paste the copied public key into the "Key" field.
-- Click the "Add SSH key" button.
+     - Click on your profile picture in the upper-right corner and select `"Settings."`
+     - In the left sidebar, click on `"SSH and GPG keys."`
+     - Click the `"New SSH key"` button.
+     - Enter a title for the key (e.g., `"My Laptop"`).
+     - Paste the copied public key into the `"Key"` field.
+     - Click the `"Add SSH key"` button.
 
 5. Test the SSH connection:
 Run the following command to test the SSH connection to GitHub:
 
+``` sh
 ssh -T git@github.com
+```
 
-You should see a message like "Hi username! You've successfully authenticated...". If you encounter any issues, refer to the [GitHub SSH troubleshooting guide](https://docs.github.com/en/authentication/troubleshooting-ssh
+You should see a message like `"Hi username! You've successfully authenticated..."`. If you encounter any issues, refer to the [GitHub SSH troubleshooting guide](https://docs.github.com/en/authentication/troubleshooting-ssh)
 
 ### How do I set up vs code to commmit everything as a bot? and if I wanted to commit it as a bot with a gpg key, how would I do that?
 
