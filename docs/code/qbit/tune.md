@@ -12,7 +12,7 @@ Unlimited on all, rate limit utp and lan
 
 ## Connection
 
-``` toml
+``` yaml
 Peer connection protocol: TCP
 Global max: off
 Max num per torrent: off
@@ -22,6 +22,7 @@ Max number of upload slots: off
 
 ## Advanced
 
+``` yaml
 Interface: put it on whatever interface you want the torrent client to bind to
 File Pool Size: 5000
 Outstanding Mem: 128
@@ -52,3 +53,4 @@ Peer turnover disconnect Percentage: 0
 Peer turnover threshold percentage: 90
 Peer turnover disconnect interval: 30
 Max outstanding requests to a single peer: Leave as is
+```
