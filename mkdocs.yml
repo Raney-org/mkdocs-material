@@ -259,6 +259,9 @@ nav:
     - code/README.md
     - Audiobookshelf: code/audiobookshelf.md
     - Pihole + Unbound: code/pihole.md
+    - qBittorrent:
+        - Tune: code/qbit/tune.md
+        - qBit Info: code/qbit/qbit.md
     - Starr Suite:
         - Radarr: code/radarr.md
     - Wiki JS: code/wiki-js.md
