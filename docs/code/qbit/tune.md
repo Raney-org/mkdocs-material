@@ -21,7 +21,7 @@ Max num per torrent: off
 Global max number upload slots: off
 Max number of upload slots: off
 ```
-![]
+![](assets/connection.png)
 ## Advanced
 
 ``` yaml
