@@ -252,20 +252,21 @@ nav:
     - Fundamentals of Programming Languages:
         - General Notes: school/programming-languages/notes.md
         - Python:
-          - Python: school/programming-languages/python/python-overview.md
-          - Variables and Expressions: school/programming-languages/python/variables-expressions.md
+            - Python: school/programming-languages/python/python-overview.md
+            - Variables and Expressions: school/programming-languages/python/variables-expressions.md
   - Tags: tags.md
   - Docker:
-    - code/README.md
-    - Audiobookshelf: code/audiobookshelf.md
-    - Pihole + Unbound: code/pihole.md
-    - qBittorrent:
-        - Tune: code/qbit/tune.md
-        - qBit Info: code/qbit/qbit.md
-    - Starr Suite:
-        - Radarr: code/radarr.md
-    - Wiki JS: code/wiki-js.md
-    - YTDL: code/ytdl.md
+      - code/README.md
+      - Audiobookshelf: code/audiobookshelf.md
+      - Pihole + Unbound: code/pihole.md
+      - qBittorrent:
+          - Tune: code/qbit/tune.md
+          - qBit Info: code/qbit/qbit.md
+          - qBit Scripts: code/qbit/scripts.md
+      - Starr Suite:
+          - Radarr: code/radarr.md
+      - Wiki JS: code/wiki-js.md
+      - YTDL: code/ytdl.md
   - Tests:
       - Mermaid: code/mermaid-test.md
       - Data Tables: code/datatables.md
