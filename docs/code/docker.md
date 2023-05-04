@@ -3,9 +3,23 @@ tags:
   - DOCKER
   - GUIDE
   - LINUX
+  - TRAEFIK
 ---
 
 # Docker Tutorial
+
+## Random Tidbit
+
+Thank you for providing additional output from the docker inspect autobrr command. This output contains information about the autobrr container's configuration, including working directory, entrypoint, labels, and other settings.
+
+In this output, the Traefik-related labels are of particular interest. They configure how Traefik handles traffic to the autobrr container:
+
+The container is accessible at the domain autobrr.domain.com.
+Traefik is configured to use both HTTP and HTTPS entry points, with traffic from the HTTP entry point being redirected to HTTPS using the redirect-to-https middleware.
+The globalHeaders@file and secureHeaders@file middlewares are applied to set various security-related headers.
+The gzip middleware is enabled to compress responses.
+The port used by the autobrr service is 7474, as indicated by the traefik.http.services.autobrr.loadbalancer.server.port label.
+Based on the provided information, it appears that the autobrr container is properly configured for use with Traefik. If you are experiencing any issues with this setup or have concerns, please provide more details about the problem, and I will be happy to help.
 
 This guide is for [Linux], specifically [Ubuntu 22.04].
 
