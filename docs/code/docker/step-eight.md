@@ -77,3 +77,5 @@ You can now use `#!shell docker pull sammy/ubuntu-nodejs` to pull the image to a
 In this tutorial you installed `Docker`, worked with images and containers, and pushed a modified image to Docker Hub. Now that you know the basics, explore the other Docker tutorials in the [DigitalOcean Community].
 
   [DigitalOcean Community]: https://www.digitalocean.com/community/tags/docker?type=tutorials
+
+  [Docker Hub]: https://hub.docker.com/
