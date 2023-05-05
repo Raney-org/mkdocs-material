@@ -4,7 +4,7 @@ tags:
   - SCRIPTS
 ---
 
-# qBit scripts
+# qBit Scripts
 
 ## qBittorrent Ratio Analyzer
 
