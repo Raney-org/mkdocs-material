@@ -130,7 +130,7 @@ markdown_extensions:
       pygments_lang_class: true
       use_pygments: true
       linenums: true
-      auto_title: true
+#       auto_title: true
       linenums_style: pymdownx-inline
   - pymdownx.inlinehilite
   - pymdownx.snippets:
@@ -252,9 +252,8 @@ nav:
     - Fundamentals of Programming Languages:
         - General Notes: school/programming-languages/notes.md
         - Python:
-          - Python: school/programming-languages/python/python-overview.md
-          - Variables and Expressions: school/programming-languages/python/variables-expressions.md
-  - Tags: tags.md
+            - Python: school/programming-languages/python/python-overview.md
+            - Variables and Expressions: school/programming-languages/python/variables-expressions.md
   - Docker:
     - code/README.md
     - Audiobookshelf: code/audiobookshelf.md
@@ -262,16 +261,18 @@ nav:
     - qBittorrent:
         - Tune: code/qbit/tune.md
         - qBit Info: code/qbit/qbit.md
+        - qBit Scripts: code/qbit/scripts.md
     - Starr Suite:
         - Radarr: code/radarr.md
     - Wiki JS: code/wiki-js.md
     - YTDL: code/ytdl.md
   - Tests:
-      - Mermaid: code/mermaid-test.md
-      - Data Tables: code/datatables.md
       - Chat GPT: code/chat-gpt.md
+      - Data Tables: code/datatables.md
       - Docker: code/docker.md
+      - Mermaid: code/mermaid-test.md
       - Saltbox: references/saltbox.md
   - Git:
 #    - git/README.MD
       - Git Info: git/git-info.md
+  - Tags: tags.md
