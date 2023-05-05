@@ -261,10 +261,10 @@ nav:
       - Step Two: code/docker/step-two.md
       - Step Three: code/docker/step-three.md
       - Step Four: code/docker/step-four.md
-      - Step Five: code/docker/step5.md
-      - Step Six: code/docker/step6.md
-      - Step Seven: code/docker/step7.md
-      - Step Eight: code/docker/step8.md
+      - Step Five: code/docker/step-five.md
+      - Step Six: code/docker/step-six.md
+      - Step Seven: code/docker/step-seven.md
+      - Step Eight: code/docker/step-eight.md
     - Audiobookshelf: code/audiobookshelf.md
     - Pihole + Unbound: code/pihole.md
     - qBittorrent:
