@@ -130,7 +130,7 @@ markdown_extensions:
       pygments_lang_class: true
       use_pygments: true
       linenums: true
-      auto_title: true
+#       auto_title: true
       linenums_style: pymdownx-inline
   - pymdownx.inlinehilite
   - pymdownx.snippets:
@@ -254,25 +254,34 @@ nav:
         - Python:
             - Python: school/programming-languages/python/python-overview.md
             - Variables and Expressions: school/programming-languages/python/variables-expressions.md
-  - Tags: tags.md
   - Docker:
-      - code/README.md
-      - Audiobookshelf: code/audiobookshelf.md
-      - Pihole + Unbound: code/pihole.md
-      - qBittorrent:
-          - Tune: code/qbit/tune.md
-          - qBit Info: code/qbit/qbit.md
-          - qBit Scripts: code/qbit/scripts.md
-      - Starr Suite:
-          - Radarr: code/radarr.md
-      - Wiki JS: code/wiki-js.md
-      - YTDL: code/ytdl.md
+    - code/README.md
+    - Audiobookshelf: code/audiobookshelf.md
+    - Docker:
+      - Step One: code/docker/step-one.md
+      - Step Two: code/docker/step-two.md
+      - Step Three: code/docker/step-three.md
+      - Step Four: code/docker/step-four.md
+      - Step Five: code/docker/step5.md
+      - Step Six: code/docker/step6.md
+      - Step Seven: code/docker/step7.md
+      - Step Eight: code/docker/step8.md
+    - Pihole + Unbound: code/pihole.md
+    - qBittorrent:
+        - Tune: code/qbit/tune.md
+        - qBit Info: code/qbit/qbit.md
+        - qBit Scripts: code/qbit/scripts.md
+    - Starr Suite:
+        - Radarr: code/radarr.md
+    - Wiki JS: code/wiki-js.md
+    - YTDL: code/ytdl.md
   - Tests:
-      - Mermaid: code/mermaid-test.md
-      - Data Tables: code/datatables.md
       - Chat GPT: code/chat-gpt.md
-      - Docker: code/docker.md
+      - Data Tables: code/datatables.md
+#       - Docker: code/docker.md
+      - Mermaid: code/mermaid-test.md
       - Saltbox: references/saltbox.md
   - Git:
 #    - git/README.MD
       - Git Info: git/git-info.md
+  - Tags: tags.md
