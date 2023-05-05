@@ -255,9 +255,8 @@ nav:
             - Python: school/programming-languages/python/python-overview.md
             - Variables and Expressions: school/programming-languages/python/variables-expressions.md
   - Docker:
-    - code/README.md
-    - Audiobookshelf: code/audiobookshelf.md
-    - Docker:
+    - Guide:
+      - Intro: code/docker/README.md
       - Step One: code/docker/step-one.md
       - Step Two: code/docker/step-two.md
       - Step Three: code/docker/step-three.md
@@ -266,6 +265,7 @@ nav:
       - Step Six: code/docker/step6.md
       - Step Seven: code/docker/step7.md
       - Step Eight: code/docker/step8.md
+    - Audiobookshelf: code/audiobookshelf.md
     - Pihole + Unbound: code/pihole.md
     - qBittorrent:
         - Tune: code/qbit/tune.md
