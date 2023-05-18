@@ -99,7 +99,7 @@ and/or end of the divider.
     | `DELETE`    | :material-close:     Delete resource |
 
     </div>
-
+k
 === "Right"
 
     ``` markdown hl_lines="2" title="Data table, columns aligned to right"

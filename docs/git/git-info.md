@@ -89,43 +89,47 @@ Run the following command to test the SSH connection to GitHub:
 ssh -T git@github.com
 ```
 
-You should see a message like `"Hi username! You've successfully authenticated..."`. If you encounter any issues, refer to the [GitHub SSH troubleshooting guide](https://docs.github.com/en/authentication/troubleshooting-ssh)
+You should see a message like `"Hi username! You've successfully authenticated..."`. If you encounter any issues, refer to the [GitHub SSH troubleshooting guide]
 
+[GitHub SSH troubleshooting guide]: https://docs.github.com/en/authentication/troubleshooting-ssh
 
-## how do you change a local GitHub repo from using ssh to httpsid
-
+## How Do You Change a Local GitHub Repo From Using SSH to HTTPS
 
 To change a local GitHub repository from using SSH to HTTPS, follow these steps:
 
 1. Open a terminal (or Git Bash on Windows) and navigate to your local repository using the cd command:
 
-cd path/to/your/repo
-
+    ``` sh
+    cd path/to/your/repo
+    ```
 
 2. Check the current remote URL by running:
 
-git remote -v
+    ``` sh
+    git remote -v
+    ```
 
-
-This will display the remote URLs for fetching and pushing, which are currently using the SSH protocol (e.g., git@github.com:username/repo.git).
+    This will display the remote URLs for fetching and pushing, which are currently using the SSH protocol (e.g., `git@github.com:username/repo.git`).
 
 3. Change the remote URL from SSH to HTTPS:
 
-Find the HTTPS URL of your repository on GitHub by going to your repository page, clicking the green "Code" button, and selecting the "HTTPS" option. The URL will look like this: https://github.com/username/repo.git.
+    Find the HTTPS URL of your repository on GitHub by going to your repository page, clicking the green "Code" button, and selecting the "HTTPS" option. The URL will look like this: `https://github.com/username/repo.git`.
 
-Now, update the remote URL in your local repository by running:
+    Now, update the remote URL in your local repository by running:
 
-git remote set-url origin https://github.com/username/repo.git
+    ``` sh
+    git remote set-url origin https://github.com/username/repo.git
+    ```
 
-
-Replace https://github.com/username/repo.git with the actual HTTPS URL you found on GitHub.
+    Replace `https://github.com/username/repo.git` with the actual HTTPS URL you found on GitHub.
 
 4. Verify the change:
 
-Run git remote -v again to check if the remote URLs for fetching and pushing have been updated to the HTTPS protocol.
+    Run `#!shell git remote -v` again to check if the remote URLs for fetching and pushing have been updated to the HTTPS protocol.
 
-Now, your local GitHub repository is using HTTPS instead of SSH for communication. Keep in mind that you might be prompted to enter your GitHub username and password or personal access token when you push or pull changes.
-### How do I set up vs code to commmit everything as a bot? and if I wanted to commit it as a bot with a gpg key, how would I do that?
+    Now, your local GitHub repository is using HTTPS instead of SSH for communication. Keep in mind that you might be prompted to enter your GitHub username and password or personal access token when you push or pull changes.
+
+## How do I set up VS Code to Commmit Everything as a Bot? and if I Wanted to Commit it as a Bot With a `GPG` Key, How Would I Do That?
 
 To commit changes in VS Code as a bot, you need to configure Git with the bot's name and email address. Additionally, if you want to sign commits with a GPG key, you need to set up GPG for the bot and configure Git to use it.
 
@@ -133,20 +137,18 @@ Here's a step-by-step guide:
 
 1. Configure Git with the bot's name and email address:[^1]
 
-[^1]: Note: this requires you to have `git` installed on your device.
+    Open the integrated terminal in VS Code and run the following commands:
 
-Open the integrated terminal in VS Code and run the following commands:
+    ```bash
+    git config --global user.name "Your Bot Name"
+    git config --global user.email "your-bot-email@example.com"
+    ```
 
-```bash
-git config --global user.name "Your Bot Name"
-git config --global user.email "your-bot-email@example.com"
-```
+    Replace "Your Bot Name" and "`your-bot-email@example.com`" with the actual bot name and email address.
 
-Replace "Your Bot Name" and "your-bot-email@example.com" with the actual bot name and email address.
+2. Set up GPG for the bot:
 
-1. Set up GPG for the bot:
-
-First, make sure you have GPG installed on your system. If you don't have it installed, you can download it from [GnuPG's official website](https://discord.com/channels/636941159704559617/636967268579803156/1099805846768193536).
+First, make sure you have GPG installed on your system. If you don't have it installed, you can download it from [GnuPG's official website].
 
 Next, open the integrated terminal in VS Code and generate a new GPG key for the bot:
 
@@ -360,15 +362,15 @@ E[sub-mod/] -->|contains| F[.git/]
 E[sub-mod/] -->|contains| G[...]
 ```
 
-### Can you expand on git tracking branches and how they are used, as compared to comitting to main/master
+## Can you expand on git tracking branches and how they are used, as compared to comitting to main/master
 
-#### Use cases and reasons for using tracking branches
+## Use cases and reasons for using tracking branches
 
 **Collaboration:** Tracking branches are particularly useful when you collaborate with a team on a project. Each team member can create their own local tracking branches to work on different features or bug fixes. These tracking branches will be connected to remote branches, allowing team members to easily stay in sync with the remote repository and share their work.
 
 **Isolation:** Tracking branches allow you to isolate your work from the main branch. This is helpful when you're working on a new feature or bug fix that might take some time to complete. By using a separate tracking branch, you can experiment and make changes without affecting the stability of the main branch.
 
-#### How tracking branches work compared to committing to the main branch
+## How tracking branches work compared to committing to the main branch
 
 When you commit changes to the main branch, you're directly modifying the primary branch in your repository. This can be risky, especially if you're working on a large-scale project with multiple contributors. By committing directly to the main branch, your changes might conflict with others' work, or you might accidentally introduce bugs or unstable features.
 
@@ -377,7 +379,7 @@ On the other hand, when you use a tracking branch, you create a separate branch 
 **Checking the tracking status:** To see the tracking status of your branches, you can use the following command:
 
 ```shell
-   git branch -vv
+git branch -vv
 ```
 
 ???+ note
@@ -820,3 +822,9 @@ Please note that squashing commits rewrites the commit history. Be cautious when
     git config user.name "Your Bot Name"
     git config user.email "your-bot-email@example.com"
     ```
+
+
+
+  [^1]: Note: this requires you to have `git` installed on your device.
+
+  []: https://discord.com/channels/636941159704559617/636967268579803156/1099805846768193536
