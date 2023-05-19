@@ -27,3 +27,25 @@ mount /dev/mapper/vg0-root /mnt
 chroot-prepare /mnt 
 chroot /mnt
 ```
+
+## Dropbox Stuff
+
+rclone remote:
+
+``` yaml
+[dropboxcrypt]
+type = crypt
+remote = dropbox:/crypt
+password = <snip>
+password2 = <snip>
+filename_encoding = base32768
+```
+
+(From Salty)
+I don't do server side copy
+
+```shell
+rclone move dropboxcrypt: dropboxnewcrypt: --delete-empty-src-dirs -vP --crypt-server-side-across-configs --server-side-across-configs
+```
+
+was my command to move stuff between crypts
